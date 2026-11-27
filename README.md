@@ -39,3 +39,5 @@ Catalogul are 73 de poziții: 55 extrase din documentele clientului, 15 variante
 Butonul alb „Sună” este fix în dreapta jos, deasupra coșului și a widgetului WhatsApp, pe mobil și desktop. Rămâne demonstrativ.
 
 Banda de categorii dintre hero și meniu se derulează continuu; se oprește când nu este vizibilă, când fila este ascunsă, la hover și pentru utilizatorii care preferă mișcare redusă.
+
+Pe mobil, apelul și WhatsApp sunt unul lângă altul la baza ecranului, iar coșul este centrat deasupra lor. Desktopul păstrează grupul vertical.

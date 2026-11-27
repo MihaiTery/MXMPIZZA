@@ -127,3 +127,10 @@
 @keyframes ticker-scroll{to{transform:translateX(-50%)}}
 @media(max-width:700px){.ticker .ticker-star{font-size:18px;padding:0 14px}}
 @media(prefers-reduced-motion:reduce){.ticker .ticker-track{animation:none;transform:none;will-change:auto}}
+
+/* Mobile contact pair with the cart centered on the row above. */
+@media(max-width:700px){
+  .whatsapp-launcher{right:14px;bottom:14px;bottom:calc(14px + env(safe-area-inset-bottom, 0px))}
+  .floating-call{right:80px;bottom:14px;bottom:calc(14px + env(safe-area-inset-bottom, 0px))}
+  .floating-cart{right:35px;bottom:80px;bottom:calc(80px + env(safe-area-inset-bottom, 0px))}
+}
