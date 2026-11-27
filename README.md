@@ -37,3 +37,5 @@ Poziția fixă a coșului are fallback CSS explicit pentru browsere desktop care
 Catalogul are 73 de poziții: 55 extrase din documentele clientului, 15 variante pizza de 50 cm derivate din rețetele de 32 cm și trei supe cremă cu rețete furnizate ulterior de client. Variantele 50 cm nu copiază gramajele de 32 cm; cantitățile și disponibilitatea trebuie confirmate. Supele nu mai sunt marcate mock; prețurile, gramajele și disponibilitatea rămân neconfirmate. Butonul de apel afișează doar `07xx xxx xxx · DEMO` și nu inițiază apeluri.
 
 Butonul alb „Sună” este fix în dreapta jos, deasupra coșului și a widgetului WhatsApp, pe mobil și desktop. Rămâne demonstrativ.
+
+Banda de categorii dintre hero și meniu se derulează continuu; se oprește când nu este vizibilă, când fila este ascunsă, la hover și pentru utilizatorii care preferă mișcare redusă.

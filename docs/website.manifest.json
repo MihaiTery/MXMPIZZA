@@ -222,19 +222,25 @@
     "sourceCoverage": "full-site",
     "sourceSections": [
       "hero nocturn",
+      "bandă de categorii în mișcare",
       "catalog complet",
       "pauză de brand",
       "comandă în pregătire",
       "footer"
     ],
     "motif": "Cercul pizza, scânteia și roșul focului leagă toate secțiunile.",
-    "transitionGuidance": "Un hero întunecat trece prin banda roșie în catalogul deschis; o secțiune întunecată reafirmă programul non stop înainte de informațiile despre comandă.",
+    "transitionGuidance": "Banda roșie se derulează continuu dinspre dreapta spre stânga între hero și catalog, apoi se oprește când iese din ecran.",
     "endingGuidance": "Logo-ul original închide pagina lângă starea reală a comenzilor.",
     "chapters": [
       {
         "page": "/",
         "sectionId": "hero",
         "role": "hero"
+      },
+      {
+        "page": "/",
+        "sectionId": "ticker",
+        "role": "brand-transition"
       },
       {
         "page": "/",
@@ -361,7 +367,7 @@
       18,
       19
     ],
-    "rationale": "Catalogul de 73 de poziții este grupat în categorii vizibile, cu navigare orizontală explicită. Variantele de pizza 50 cm sunt marcate ca propuneri. Cele trei supe cremă folosesc rețetele furnizate de client.",
+    "rationale": "Banda animată adaugă energie între hero și catalog fără a bloca navigarea. Cele două secvențe identice produc o buclă fără întreruperi.",
     "tokens": {
       "feedbackMs": 150,
       "commonTransitionMs": 240,
@@ -380,7 +386,8 @@
       "whatsapp": "Widget demonstrativ accesibil pe mobil și desktop; deschide dialog, permite redactare locală și sugestii de mesaj; trimiterea rămâne dezactivată până la adăugarea numărului.",
       "cart": "Coșul este control fix la 98 px de baza ecranului pe desktop și 80 px pe mobil; valorile CSS au fallback explicit înainte de safe-area env(). URL-ul CSS este versionat pentru cache.",
       "categories": "Butoane încadrate cu stare activă contrastantă; săgeți de derulare orizontală, dezactivate la capete; navigare prin tastatură și atingere.",
-      "call": "Butonul alb de apel este fix în dreapta jos, deasupra coșului și a widgetului WhatsApp, pe mobil și desktop. Deschide doar dialogul demonstrativ cu 07xx xxx xxx; nu există link tel: și nu se inițiază apel."
+      "call": "Butonul alb de apel este fix în dreapta jos, deasupra coșului și a widgetului WhatsApp, pe mobil și desktop. Deschide doar dialogul demonstrativ cu 07xx xxx xxx; nu există link tel: și nu se inițiază apel.",
+      "ticker": "Banda de categorii se derulează continuu în buclă; se oprește la hover, în afara ecranului, când fila este ascunsă și pentru prefers-reduced-motion."
     }
   },
   "performanceEngineering": {
@@ -396,7 +403,8 @@
       "criticalMedia": "Logo transparent WebP încărcat prioritar în header, cu dimensiuni intrinseci; pizza este CSS și are dimensiune stabilă.",
       "javascript": "Pointermove coalescat cu requestAnimationFrame, dezactivat în afara hero-ului și pe dispozitive tactile; fără dependențe noi.",
       "loading": "Logo din footer lazy; fără autoplay.",
-      "data": "JSON local; backend neaplicabil până la integrarea comenzilor."
+      "data": "JSON local; backend neaplicabil până la integrarea comenzilor.",
+      "animation": "Banda folosește doar transform CSS; IntersectionObserver și Page Visibility opresc animația când nu este vizibilă."
     },
     "verification": {
       "status": "pending",
@@ -487,7 +495,7 @@
             "mobile": "semantic single-column flow",
             "desktop": "adapt component to content and brand signature"
           },
-          "nextSectionId": "menu",
+          "nextSectionId": "ticker",
           "effectBindings": [
             {
               "target": "hero.media",
@@ -628,6 +636,53 @@
               "note": "Generated design hypothesis, not an implemented or visually reviewed hero. Scores require explicit human/agent visual inspection and reasons."
             }
           }
+        },
+        {
+          "id": "ticker",
+          "narrativeRole": "brand-transition",
+          "componentId": "component.section.story.v1",
+          "variantId": "story",
+          "compositionId": "composition.asymmetric-editorial.v1",
+          "compositionParams": {
+            "mediaShare": 0.497,
+            "mediaSide": "end"
+          },
+          "compositionStatus": "selected",
+          "requestedCompositionId": null,
+          "suggestedCompositionId": null,
+          "componentParams": {},
+          "contentSlots": [
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "PIZZA ✦ SHAORMA ✦ PASTE ✦ CRISPY ✦ DESERT ✦"
+            },
+            {
+              "name": "ticker.track",
+              "status": "authored",
+              "value": "Două secvențe identice pentru derulare continuă."
+            }
+          ],
+          "responsive": {
+            "mobile": "semantic single-column flow",
+            "desktop": "adapt component to content and brand signature"
+          },
+          "nextSectionId": "menu",
+          "effectBindings": [
+            {
+              "target": "ticker.track",
+              "effectId": "effect.custom.marquee.v1",
+              "params": {
+                "durationSeconds": 24,
+                "direction": "left",
+                "pauseOffscreen": true,
+                "pauseWhenHidden": true
+              },
+              "selectionSource": "user",
+              "implementation": "styles.css, app.js",
+              "status": "implemented-locally"
+            }
+          ]
         },
         {
           "id": "menu",

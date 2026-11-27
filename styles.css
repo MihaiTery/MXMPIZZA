@@ -118,3 +118,12 @@
 .call-label small{font-size:9px;letter-spacing:.16em;color:#8c8175;margin-top:4px}
 @media(max-width:700px){.floating-call{right:14px;bottom:146px;bottom:calc(146px + env(safe-area-inset-bottom, 0px));min-width:55px;width:55px;height:55px;min-height:55px;padding:0}.call-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.call-symbol{font-size:26px}}
 @media(prefers-reduced-motion:reduce){.floating-call{transition:none}.floating-call:hover{transform:none}}
+
+/* Seamless category marquee, with static text for reduced motion. */
+.ticker .ticker-track{display:flex;align-items:center;width:max-content;min-width:0;padding-left:0;animation:ticker-scroll 24s linear infinite;will-change:transform}
+.ticker .ticker-segment{display:block;flex:none;min-width:max-content;padding:0;font:inherit;color:inherit;white-space:nowrap}
+.ticker .ticker-star{font-size:23px;padding:0 26px;color:#fff0d0}
+.ticker[data-visible="false"] .ticker-track,.ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes ticker-scroll{to{transform:translateX(-50%)}}
+@media(max-width:700px){.ticker .ticker-star{font-size:18px;padding:0 14px}}
+@media(prefers-reduced-motion:reduce){.ticker .ticker-track{animation:none;transform:none;will-change:auto}}

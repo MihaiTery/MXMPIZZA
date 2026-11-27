@@ -102,6 +102,76 @@
           "notes": []
         },
         {
+          "id": "ticker",
+          "role": "brand-transition",
+          "componentId": "component.section.story.v1",
+          "componentStatus": "implemented-unverified",
+          "variantId": "story",
+          "compositionId": null,
+          "compositionStatus": "selected",
+          "compositionVersion": null,
+          "compositionParams": {
+            "mediaShare": 0.497,
+            "mediaSide": "end"
+          },
+          "componentParams": {},
+          "responsive": "Reading order is heading, body, action, then media.",
+          "componentFallback": "Text and real link remain without image.",
+          "slots": [
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "PIZZA ✦ SHAORMA ✦ PASTE ✦ CRISPY ✦ DESERT ✦"
+            },
+            {
+              "name": "ticker.track",
+              "status": "authored",
+              "value": "Două secvențe identice pentru derulare continuă."
+            }
+          ],
+          "authoredSlots": [
+            "section.heading",
+            "ticker.track"
+          ],
+          "missing": [],
+          "tokens": "manifest.designTokens / brand-signature.css",
+          "effects": [
+            {
+              "page": "/",
+              "sectionId": "ticker",
+              "componentId": "component.section.story.v1",
+              "target": "ticker.track",
+              "requestedEffectId": "effect.custom.marquee.v1",
+              "appliedEffectId": "effect.none.v1",
+              "status": "needs-agent-implementation",
+              "selectionSource": "user",
+              "attempts": [
+                {
+                  "effectId": "effect.custom.marquee.v1",
+                  "reason": "Unknown effect ID."
+                }
+              ],
+              "availableFallbackEffectId": null,
+              "reason": "Explicit user effect requires a brand-specific implementation; fallback is a disclosed option only."
+            }
+          ],
+          "unmountedEffectTargets": [
+            {
+              "target": "ticker.track",
+              "effectId": "effect.none.v1",
+              "reason": "The current content path does not render this target; author the required content or adapt the binding."
+            }
+          ],
+          "integration": {
+            "stylesheet": "rail-components.css",
+            "rootAttribute": "data-rail-section=\"ticker\"",
+            "slotAttribute": "data-rail-slot",
+            "component": "component.section.story.v1",
+            "framework": "Adapt this semantic markup in the existing stack; do not replace established components."
+          },
+          "notes": []
+        },
+        {
           "id": "menu",
           "role": "catalog",
           "componentId": "component.section.features-grid.v1",
@@ -304,8 +374,8 @@
   ],
   "selectedComponents": [
     "component.hero.editorial-split.v1",
-    "component.section.features-grid.v1",
     "component.section.story.v1",
+    "component.section.features-grid.v1",
     "component.footer.standard.v1"
   ],
   "selectedCompositions": [
@@ -381,6 +451,24 @@
       "attempts": [
         {
           "effectId": "effect.custom.pointer-tilt.v1",
+          "reason": "Unknown effect ID."
+        }
+      ],
+      "availableFallbackEffectId": null,
+      "reason": "Explicit user effect requires a brand-specific implementation; fallback is a disclosed option only."
+    },
+    {
+      "page": "/",
+      "sectionId": "ticker",
+      "componentId": "component.section.story.v1",
+      "target": "ticker.track",
+      "requestedEffectId": "effect.custom.marquee.v1",
+      "appliedEffectId": "effect.none.v1",
+      "status": "needs-agent-implementation",
+      "selectionSource": "user",
+      "attempts": [
+        {
+          "effectId": "effect.custom.marquee.v1",
           "reason": "Unknown effect ID."
         }
       ],

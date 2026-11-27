@@ -58,3 +58,14 @@ requestAnimationFrame(updateCategoryArrows);
 
 // Call is a local preview until the client supplies a real phone number.
 document.querySelectorAll('.call-trigger').forEach(button=>button.addEventListener('click',()=>document.querySelector('#callDialog').showModal()));
+
+// Pause the category marquee outside the viewport or when the tab is hidden.
+(()=>{
+ const ticker=document.querySelector('.ticker');
+ if(!ticker)return;
+ let inView=false;
+ const sync=()=>{ticker.dataset.visible=String(inView&&!document.hidden)};
+ const observer=new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;sync()},{threshold:0});
+ observer.observe(ticker);
+ document.addEventListener('visibilitychange',sync);
+})();
