@@ -24,5 +24,18 @@ for category,name in files:
   if title:
    detail=re.sub(r'\s+',' ',detail).replace('ciuoerci','ciuperci').replace('uesturoi','usturoi').replace('ketchp','ketchup')
    items.append({'id':f'p{len(items)+1:02d}','category':subcat,'name':title[0].upper()+title[1:],'description':detail,'price':None,'available':None})
+# Product extensions requested for the website preview. The 32 cm recipes are the source;
+# exact 50 cm weights and the two soup recipes require client confirmation.
+pizza50=[]
+for n, item in enumerate((x for x in items if x['category']=='pizza'), 1):
+ ingredients=re.sub(r'\btotal\s*\d+\s*g\b.*','',item['description'],flags=re.I)
+ ingredients=re.sub(r'\b\d+\s*g?\b','',ingredients)
+ ingredients=re.sub(r'\s*,\s*',', ',ingredients).strip(' ,.;')
+ pizza50.append({'id':f'p50-{n:02d}','category':'pizza50','name':item['name']+' 50 cm','description':f'{ingredients}. Gramajul pentru 50 cm se confirmă.','price':None,'available':None,'mock':True,'badge':'Variantă propusă'})
+soups=[{'id':'soup-01','category':'supe','name':'Supă cremă de roșii','description':'Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.','price':None,'available':None,'mock':True,'badge':'Produs mock'}, {'id':'soup-02','category':'supe','name':'Supă cremă de ciuperci','description':'Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.','price':None,'available':None,'mock':True,'badge':'Produs mock'}]
+pizza_end=next(i for i,x in enumerate(items) if x['category']!='pizza')
+items[pizza_end:pizza_end]=pizza50
+soup_at=next(i for i,x in enumerate(items) if x['category']=='deserturi')
+items[soup_at:soup_at]=soups
 (root/'menu.json').write_text(json.dumps(items,ensure_ascii=False,indent=2)+'\n')
 print(len(items))

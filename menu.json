@@ -120,6 +120,156 @@
     "available": null
   },
   {
+    "id": "p50-01",
+    "category": "pizza50",
+    "name": "Pizza margherita 50 cm",
+    "description": "aluat, mozzarella, sos pizza, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-02",
+    "category": "pizza50",
+    "name": "Pizza prosciutto cotto 50 cm",
+    "description": "aluat, mozzarella  sos pizza, sunca, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-03",
+    "category": "pizza50",
+    "name": "Pizza prosciutto funghi 50 cm",
+    "description": "aluat320g, mozzarella  sos pizza, sunca, ciuperci, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-04",
+    "category": "pizza50",
+    "name": "Pizza quattro stagioni 50 cm",
+    "description": "aluat320g, mozzarella, sos pizza, salam, sunca, ciuperci, masline, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-05",
+    "category": "pizza50",
+    "name": "Pizza capriciosa 50 cm",
+    "description": "aluat320g, mozzarella, sos pizza, sunca, ciuperci, masline, ardei capia, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-06",
+    "category": "pizza50",
+    "name": "Pizza salami 50 cm",
+    "description": "aluat320g, mozzarella, sos pizza  salam napoli, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-07",
+    "category": "pizza50",
+    "name": "Pizza diavola 50 cm",
+    "description": "aluat320g, mozzarella, sos pizza, salam picant ventricina, jalapeno, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-08",
+    "category": "pizza50",
+    "name": "Pizza quattro formaggi 50 cm",
+    "description": "aluat320g, mozzarella, gorgonzola, parmezan, emmentaller, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-09",
+    "category": "pizza50",
+    "name": "Pizza hot cheese 50 cm",
+    "description": "aluat320g, mozzarella, gorgonzola, parmezan, jalapeno, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-10",
+    "category": "pizza50",
+    "name": "Pizza carnivora 50 cm",
+    "description": "aluat, mozzarella, sos pizza, sunca, salam napoli, bacon, carnati, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-11",
+    "category": "pizza50",
+    "name": "Pizza tonno e cipolla 50 cm",
+    "description": "aluat, mozzarella, sos pizza, ton, ceapa rosie, masline, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-12",
+    "category": "pizza50",
+    "name": "Pizza mikys 50 cm",
+    "description": "aluat320g, mozzarella, sos pizza50g, carnati, bacon, porumb, ceapa rosie, ardei capia, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-13",
+    "category": "pizza50",
+    "name": "Pizza carbonara 50 cm",
+    "description": "aluat320g, mozzarella, sos alb, bacon, ou, parmezan, busuioc, ulei malsine. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-14",
+    "category": "pizza50",
+    "name": "Pizza pollo 50 cm",
+    "description": "aluat, mozzarella, sos pizza, piept pui, porumb, masline, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
+    "id": "p50-15",
+    "category": "pizza50",
+    "name": "Pizza vegetariana 50 cm",
+    "description": "aluat, mozzarella, sos pizza, ciuperci, masline, ceapa rosie, ardei capia, porumb, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Variantă propusă"
+  },
+  {
     "id": "p16",
     "category": "shaorma",
     "name": "Shaorma pui mica",
@@ -334,6 +484,26 @@
     "description": "rosii 100g, castraveti 100g, ceapa rosie 20g, masline, 50g, sare si piper, ulei masline, total 270g",
     "price": null,
     "available": null
+  },
+  {
+    "id": "soup-01",
+    "category": "supe",
+    "name": "Supă cremă de roșii",
+    "description": "Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Produs mock"
+  },
+  {
+    "id": "soup-02",
+    "category": "supe",
+    "name": "Supă cremă de ciuperci",
+    "description": "Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.",
+    "price": null,
+    "available": null,
+    "mock": true,
+    "badge": "Produs mock"
   },
   {
     "id": "p43",

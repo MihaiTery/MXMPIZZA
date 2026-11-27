@@ -282,7 +282,7 @@
       }
     ]
   },
-  "artDirectionRationale": "Logo-ul original MXM Food / Miky’s Pizza este decupat pe transparență și plasat în dreapta sus. Focul roșu-portocaliu și accentele italiene continuă în hero-ul nocturn cu pizza reactivă.",
+  "artDirectionRationale": "Logo transparent în dreapta sus; titluri de produse roșu-portocaliu și filtre încadrate preiau accentul de foc al identității.",
   "technologyDecision": {
     "source": "technology.selection.v1",
     "status": "decided",
@@ -361,7 +361,7 @@
       18,
       19
     ],
-    "rationale": "Coșul demonstrativ rămâne accesibil pe tot parcursul meniului, cu control fix separat de widgetul WhatsApp. Pizza răspunde la cursor; filtrele oferă feedback imediat.",
+    "rationale": "Catalogul de 72 de poziții este grupat în categorii vizibile, cu navigare orizontală explicită. Variantele 50 cm și supele sunt marcate ca propuneri. Apelul rămâne demonstrativ.",
     "tokens": {
       "feedbackMs": 150,
       "commonTransitionMs": 240,
@@ -378,7 +378,9 @@
       "keyboard": "Dialoguri native, focus vizibil și link de salt.",
       "reducedMotion": "Logo și pizza statice; fără tilt, levitație sau scroll animat.",
       "whatsapp": "Widget demonstrativ accesibil pe mobil și desktop; deschide dialog, permite redactare locală și sugestii de mesaj; trimiterea rămâne dezactivată până la adăugarea numărului.",
-      "cart": "Coșul este control fix la 98 px de baza ecranului pe desktop și 80 px pe mobil; valorile CSS au fallback explicit înainte de safe-area env(). URL-ul CSS este versionat pentru cache."
+      "cart": "Coșul este control fix la 98 px de baza ecranului pe desktop și 80 px pe mobil; valorile CSS au fallback explicit înainte de safe-area env(). URL-ul CSS este versionat pentru cache.",
+      "categories": "Butoane încadrate cu stare activă contrastantă; săgeți de derulare orizontală, dezactivate la capete; navigare prin tastatură și atingere.",
+      "call": "Buton Sună în header și footer deschide un dialog demonstrativ cu 07xx xxx xxx; nu există link tel: și nu se inițiază apel."
     }
   },
   "performanceEngineering": {
@@ -408,7 +410,7 @@
       {
         "path": "/",
         "title": "MXM PIZZA — poftă la orice oră",
-        "description": "Catalogul MXM PIZZA; comenzile online sunt în pregătire."
+        "description": "MXM PIZZA: pizza 32 și 50 cm, shaorma, meniuri, paste, salate, supe cremă propuse, deserturi și băuturi. Comenzile online sunt în pregătire."
       }
     ],
     "crawlPlan": "noindex pentru preview public; canonical către URL-ul GitHub Pages. Elimină noindex numai după confirmarea datelor comerciale și lansarea comenzilor.",
@@ -569,7 +571,7 @@
             "fingerprint": "1ea3ec41f6a0401b80a301006d6249773226281d441a0dbf893b792dd501d64b",
             "brandAnchor": {
               "brand": "MXM PIZZA",
-              "offer": "55 de produse în șase grupe de meniu și băuturi",
+              "offer": "72 de produse și variante: 55 din documente, 15 pizza de 50 cm propuse și 2 supe cremă mock",
               "audience": "clienți din București",
               "goal": "meniu complet și pregătire pentru comenzi online"
             },
@@ -649,7 +651,7 @@
             {
               "name": "section.body",
               "status": "authored",
-              "value": "55 de produse din documentele clientului, cu căutare și filtre."
+              "value": "72 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate, săgeți de derulare și marcaje pentru propunerile mock."
             },
             {
               "name": "section.heading",
@@ -659,7 +661,7 @@
             {
               "name": "features.items",
               "status": "authored",
-              "value": "55 de produse din menu.json"
+              "value": "72 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 2 supe cremă mock."
             }
           ],
           "responsive": {

@@ -125,7 +125,7 @@
             {
               "name": "section.body",
               "status": "authored",
-              "value": "55 de produse din documentele clientului, cu căutare și filtre."
+              "value": "72 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate, săgeți de derulare și marcaje pentru propunerile mock."
             },
             {
               "name": "section.heading",
@@ -135,7 +135,7 @@
             {
               "name": "features.items",
               "status": "authored",
-              "value": "55 de produse din menu.json"
+              "value": "72 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 2 supe cremă mock."
             }
           ],
           "authoredSlots": [

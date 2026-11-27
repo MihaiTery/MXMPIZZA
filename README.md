@@ -4,7 +4,7 @@ Site static în limba română pentru meniul MXM PIZZA. Deschide-l printr-un ser
 
 ## Conținut și integrare
 
-- `menu.json` conține toate cele 55 de produse extrase din cele șase documente `.docx` copiate în `source-docs/`. `scripts-generate-menu.py` documentează extracția inițială. Editările comerciale viitoare se fac în `menu.json`.
+- `menu.json` conține 72 de poziții: 55 de produse extrase din cele șase documente `.docx` copiate în `source-docs/`, plus 17 propuneri marcate ca atare. `scripts-generate-menu.py` documentează extracția inițială. Editările comerciale viitoare se fac în `menu.json`.
 - `price: null` și `available: null` înseamnă informații neconfirmate. Nu publica prețuri sau stocuri fără datele clientului.
 - Coșul folosește `localStorage` doar pentru demonstrație. Contul este o interfață fără autentificare. Butonul de finalizare este dezactivat. Integrarea cu platforma de comenzi trebuie să furnizeze prețuri, disponibilitate, autentificare și plasarea reală a comenzilor.
 - Adresa și telefonul sunt afișate ca informații în curs de confirmare. Nu există date de contact fictive publicate.
@@ -31,3 +31,7 @@ Logo-ul original este afișat în primul ecran. Pizza este desenată în CSS și
 Butonul coșului este fix în viewport pe mobil și desktop, deasupra widgetului WhatsApp; rămâne demonstrativ, fără checkout real.
 
 Poziția fixă a coșului are fallback CSS explicit pentru browsere desktop care nu acceptă `env(safe-area-inset-bottom)`. Fișierul CSS are versiune în URL pentru actualizarea cache-ului Pages.
+
+## Extinderea meniului
+
+Catalogul are 72 de poziții: 55 extrase din documentele clientului, 15 variante pizza de 50 cm derivate din rețetele de 32 cm și două supe cremă demonstrative. Variantele 50 cm nu copiază gramajele de 32 cm; cantitățile și disponibilitatea trebuie confirmate. Supele sunt marcate explicit `Produs mock`. Butonul de apel afișează doar `07xx xxx xxx · DEMO` și nu inițiază apeluri.

@@ -1,4 +1,4 @@
-const categories={all:'Tot meniul',pizza:'Pizza 32 cm',shaorma:'Shaorma & kebab',meniu:'Meniuri & schnitzel',paste:'Paste',salate:'Salate',deserturi:'Deserturi',bauturi:'Băuturi'};
+const categories={all:'Tot meniul',pizza:'Pizza 32 cm',pizza50:'Pizza 50 cm',shaorma:'Shaorma & kebab',meniu:'Meniuri & schnitzel',paste:'Paste',salate:'Salate',supe:'Supe cremă',deserturi:'Deserturi',bauturi:'Băuturi'};
 const state={items:[],category:'all',search:'',cart:readCart()};
 const grid=document.querySelector('#menuGrid');
 const filters=document.querySelector('#categoryFilters');
@@ -6,10 +6,10 @@ const count=document.querySelector('#resultCount');
 function readCart(){try{return JSON.parse(localStorage.getItem('mxm-demo-cart')||'{}')}catch{return {}}}
 function saveCart(){localStorage.setItem('mxm-demo-cart',JSON.stringify(state.cart));renderCart()}
 function safe(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function renderFilters(){filters.innerHTML=Object.entries(categories).map(([key,label])=>`<button type="button" data-category="${key}" aria-pressed="${state.category===key}">${label}</button>`).join('')}
-function renderMenu(){const q=state.search.toLocaleLowerCase('ro').trim();const shown=state.items.filter(item=>(state.category==='all'||item.category===state.category)&&(!q||`${item.name} ${item.description}`.toLocaleLowerCase('ro').includes(q)));count.textContent=`${shown.length} ${shown.length===1?'produs':'produse'} afișate`;grid.innerHTML=shown.length?shown.map((item,index)=>`<article class="product-card"><div class="product-top"><span class="product-category">${safe(categories[item.category])}</span><span class="product-index">${String(index+1).padStart(2,'0')}</span></div><h3>${safe(item.name)}</h3><p>${safe(item.description||'Detalii în curs de confirmare.')}</p><div class="product-bottom"><span class="price-pending">Preț în curând</span><button class="add-button" type="button" data-add="${item.id}" aria-label="Adaugă ${safe(item.name)} în coșul demonstrativ">+ Coș demo</button></div></article>`).join(''):'<p class="empty-results">Nu am găsit produse pentru această căutare.</p>'}
+function renderFilters(){const left=filters.scrollLeft;filters.innerHTML=Object.entries(categories).map(([key,label])=>`<button type="button" data-category="${key}" aria-pressed="${state.category===key}">${label}</button>`).join('');filters.scrollLeft=left;requestAnimationFrame(updateCategoryArrows)}
+function renderMenu(){const q=state.search.toLocaleLowerCase('ro').trim();const shown=state.items.filter(item=>(state.category==='all'||item.category===state.category)&&(!q||`${item.name} ${item.description}`.toLocaleLowerCase('ro').includes(q)));count.textContent=`${shown.length} ${shown.length===1?'produs':'produse'} afișate`;grid.innerHTML=shown.length?shown.map((item,index)=>`<article class="product-card"><div class="product-top"><div class="product-labels"><span class="product-category">${safe(categories[item.category])}</span>${item.badge?`<span class="product-badge">${safe(item.badge)}</span>`:''}</div><span class="product-index">${String(index+1).padStart(2,'0')}</span></div><h3>${safe(item.name)}</h3><p>${safe(item.description||'Detalii în curs de confirmare.')}</p><div class="product-bottom"><span class="price-pending">Preț în curând</span><button class="add-button" type="button" data-add="${item.id}" aria-label="Adaugă ${safe(item.name)} în coșul demonstrativ">+ Coș demo</button></div></article>`).join(''):'<p class="empty-results">Nu am găsit produse pentru această căutare.</p>'}
 function renderCart(){const entries=Object.entries(state.cart).filter(([,qty])=>qty>0);const total=entries.reduce((n,[,qty])=>n+qty,0);document.querySelector('#cartCount').textContent=total;document.querySelector('#cartItems').innerHTML=entries.length?entries.map(([id,qty])=>{const item=state.items.find(x=>x.id===id);if(!item)return '';return `<div class="cart-row"><div><strong>${safe(item.name)}</strong><small>Preț în curs de confirmare</small></div><div class="qty"><button type="button" data-qty="${id}" data-delta="-1" aria-label="Scade cantitatea pentru ${safe(item.name)}">−</button><span>${qty}</span><button type="button" data-qty="${id}" data-delta="1" aria-label="Crește cantitatea pentru ${safe(item.name)}">+</button></div></div>`}).join(''):'<p class="empty-results">Coșul este gol. Alege ceva bun din meniu.</p>';document.querySelector('#cartSummary').textContent=`${total} ${total===1?'produs':'produse'} · Total indisponibil până la publicarea prețurilor.`}
-filters.addEventListener('click',e=>{const b=e.target.closest('[data-category]');if(!b)return;state.category=b.dataset.category;renderFilters();renderMenu()});
+filters.addEventListener('click',e=>{const b=e.target.closest('[data-category]');if(!b)return;state.category=b.dataset.category;renderFilters();renderMenu();filters.querySelector(`[data-category="${state.category}"]`)?.scrollIntoView({block:'nearest',inline:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})});
 document.querySelector('#menuSearch').addEventListener('input',e=>{state.search=e.target.value;renderMenu()});
 grid.addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;state.cart[b.dataset.add]=(state.cart[b.dataset.add]||0)+1;saveCart();b.textContent='Adăugat ✓';setTimeout(()=>b.textContent='+ Coș demo',900)});
 document.querySelector('#cartItems').addEventListener('click',e=>{const b=e.target.closest('[data-qty]');if(!b)return;const id=b.dataset.qty;state.cart[id]=Math.max(0,(state.cart[id]||0)+Number(b.dataset.delta));if(!state.cart[id])delete state.cart[id];saveCart()});
@@ -45,3 +45,16 @@ fetch('menu.json').then(r=>r.json()).then(items=>{state.items=items;renderFilter
  button.addEventListener('click',()=>dialog.showModal());
  dialog.querySelectorAll('[data-wa-message]').forEach(choice=>choice.addEventListener('click',()=>{draft.value=choice.dataset.waMessage;draft.focus()}));
 })();
+
+// Category arrows remain visible while the list can scroll horizontally.
+const categoryPrev=document.querySelector('#categoryPrev');
+const categoryNext=document.querySelector('#categoryNext');
+function updateCategoryArrows(){const max=filters.scrollWidth-filters.clientWidth;categoryPrev.disabled=filters.scrollLeft<2;categoryNext.disabled=filters.scrollLeft>max-2||max<2}
+categoryPrev.addEventListener('click',()=>filters.scrollBy({left:-Math.max(220,filters.clientWidth*.65),behavior:'smooth'}));
+categoryNext.addEventListener('click',()=>filters.scrollBy({left:Math.max(220,filters.clientWidth*.65),behavior:'smooth'}));
+filters.addEventListener('scroll',updateCategoryArrows,{passive:true});
+window.addEventListener('resize',updateCategoryArrows);
+requestAnimationFrame(updateCategoryArrows);
+
+// Call is a local preview until the client supplies a real phone number.
+document.querySelectorAll('.call-trigger').forEach(button=>button.addEventListener('click',()=>document.querySelector('#callDialog').showModal()));
