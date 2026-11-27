@@ -114,7 +114,7 @@
         "onAccent": "#FFFFFF"
       },
       "motionLanguage": "deliberate, slow",
-      "motif": "Cerc de pizza, scânteie și linie editorială",
+      "motif": "Logo-ul original, scânteie, cercul pizza și aura de cuptor.",
       "narrative": "full-site",
       "dominantInteraction": "editorial-gallery",
       "heroToPage": "carry the recipe motif into authored sections",
@@ -287,9 +287,9 @@
     "source": "technology.selection.v1",
     "status": "decided",
     "strategy": "new",
-    "stack": "HTML, CSS și JavaScript fără framework; catalog JSON; ilustrație hero în CSS.",
+    "stack": "HTML, CSS și JavaScript fără framework; catalog JSON; logo JPEG original și pizza CSS cu reacție la cursor.",
     "rationale": "Un catalog de 55 de produse și un coș/cont demonstrativ nu cer backend înainte de conectarea platformei separate de comenzi. Fișierele statice sunt ușor de întreținut și de migrat.",
-    "deployment": "Preview static; hostingul și domeniul vor fi stabilite ulterior.",
+    "deployment": "GitHub Pages la https://mihaitery.github.io/MXMPIZZA/.",
     "maintenance": "Produsele și, ulterior, prețurile/disponibilitatea se actualizează în menu.json. Integrarea platformei separate va înlocui interfețele demonstrative."
   },
   "style": {
@@ -361,7 +361,7 @@
       18,
       19
     ],
-    "rationale": "Filtrarea, căutarea și coșul demo răspund imediat; navigarea rămâne tactilă și accesibilă; secțiunea finală clarifică statusul comenzilor.",
+    "rationale": "Pizza răspunde la cursor în hero, fără a mișca textul și CTA. Coșul și filtrele răspund imediat; preferința de mișcare redusă păstrează starea completă.",
     "tokens": {
       "feedbackMs": 150,
       "commonTransitionMs": 240,
@@ -373,10 +373,10 @@
       "easeExit": "cubic-bezier(0.4, 0, 1, 1)"
     },
     "behaviors": {
-      "desktop": "Filtre și căutare directă; carduri cu feedback discret.",
-      "touch": "Butoane de minimum 44 px și filtre derulabile.",
+      "desktop": "Pizza se înclină și se deplasează la pointer; se recentrează la pointerleave. Filtre și căutare directă.",
+      "touch": "Hero păstrează animația discretă de levitație; butoane de minimum 44 px și filtre derulabile.",
       "keyboard": "Dialoguri native, focus vizibil și link de salt.",
-      "reducedMotion": "Scroll instant și fără transformări decorative."
+      "reducedMotion": "Logo și pizza statice; fără tilt, levitație sau scroll animat."
     }
   },
   "performanceEngineering": {
@@ -384,12 +384,13 @@
     "selectedOptimizations": [
       2,
       3,
-      13
+      13,
+      15
     ],
     "rationale": "Nu există framework sau video; imaginea logo-ului din footer este încărcată lazy, hero-ul este CSS.",
     "strategies": {
-      "criticalMedia": "Hero CSS, fără imagine externă critică.",
-      "javascript": "Un singur fișier pentru catalog și demo; fără dependențe runtime.",
+      "criticalMedia": "Logo JPEG original încărcat prioritar în hero; pizza este CSS și are dimensiune stabilă.",
+      "javascript": "Pointermove coalescat cu requestAnimationFrame, dezactivat în afara hero-ului și pe dispozitive tactile; fără dependențe noi.",
       "loading": "Logo din footer lazy; fără autoplay.",
       "data": "JSON local; backend neaplicabil până la integrarea comenzilor."
     },
@@ -470,7 +471,7 @@
             {
               "name": "hero.media",
               "status": "authored",
-              "value": "Ilustrație originală pizza în CSS"
+              "value": "Logo-ul original MXM Food / Miky’s Pizza și pizza CSS animată, reactivă la cursor."
             },
             {
               "name": "button.primary",
@@ -486,9 +487,16 @@
           "effectBindings": [
             {
               "target": "hero.media",
-              "effectId": "effect.none.v1",
-              "params": {},
-              "selectionSource": "rail"
+              "effectId": "effect.custom.pointer-tilt.v1",
+              "params": {
+                "maxTranslationPx": 24,
+                "maxTiltDegrees": 9,
+                "idleFloatSeconds": 5,
+                "scope": "hero-art"
+              },
+              "selectionSource": "user",
+              "implementation": "app.js + styles.css",
+              "status": "implemented-locally"
             }
           ],
           "heroDirection": {
@@ -517,32 +525,32 @@
               "stages": [
                 {
                   "phase": "initial",
-                  "description": "Headline și pizza apar imediat."
+                  "description": "Logo-ul original intră rapid; pizza se ridică ușor din aura de cuptor."
                 },
                 {
                   "phase": "trigger",
-                  "description": "CTA navighează la meniu cu scroll nativ."
+                  "description": "Cursorul se mișcă peste pizza."
                 },
                 {
                   "phase": "transformation",
-                  "description": "Banda roșie introduce catalogul cald."
+                  "description": "Pizza se deplasează și se înclină proporțional cu poziția cursorului."
                 },
                 {
                   "phase": "result",
-                  "description": "Toate cele 55 de produse pot fi filtrate și căutate."
+                  "description": "La ieșirea cursorului, pizza revine la centru fără a muta textul sau CTA."
                 },
                 {
                   "phase": "exploration",
-                  "description": "Coșul demo și secțiunea de comandă explică starea platformei."
+                  "description": "CTA duce către catalogul complet și coșul demonstrativ."
                 }
               ],
-              "continuity": "Scânteia și roșul focului persistă până la footer.",
-              "mobile": "Textul precede ilustrația; catalogul are o singură coloană.",
-              "reducedMotion": "Fără scroll animat și transformări la hover.",
+              "continuity": "Flacăra din logo, scânteile, roșul fierbinte și cercurile pizza se repetă în capitolele paginii.",
+              "mobile": "Logo complet înaintea headline-ului; pizza păstrează doar mișcarea lentă, fără efect de cursor.",
+              "reducedMotion": "Logo și pizza statice; toate informațiile și acțiunile rămân accesibile.",
               "implementation": {
                 "status": "implemented",
                 "source": "index.html, styles.css, app.js",
-                "note": "Ilustrație CSS și scroll nativ; fără animație continuă."
+                "note": "Efect CSS și pointermove local, coalescat cu requestAnimationFrame; animații oprite când hero-ul nu este vizibil sau fila este ascunsă."
               },
               "controls": [
                 "link CTA navigabil cu tastatura"
@@ -563,21 +571,21 @@
               "audience": "clienți din București",
               "goal": "meniu complet și pregătire pentru comenzi online"
             },
-            "concept": "Noaptea are gust",
-            "brandConnection": "Focul și emblema italiană din logo devin o pizza circulară, scântei și contrast nocturn.",
+            "concept": "Noaptea are gust — logo original și pizza vie",
+            "brandConnection": "Logo-ul original este punctul de identitate din primul ecran; flacăra, culorile italiene și energia nocturnă continuă în pizza care reacționează la cursor.",
             "composition": {
-              "focalPoint": "pizza originală CSS",
-              "desktop": "Headline mare în stânga, pizza circulară și orbită în dreapta.",
-              "mobile": "Headline, explicație și CTA înainte de ilustrație.",
+              "focalPoint": "Logo-ul original MXM Food / Miky’s Pizza și pizza reactivă CSS",
+              "desktop": "Logo mare și headline în stânga, pizza cu răspuns la cursor și strălucire de cuptor în dreapta.",
+              "mobile": "Logo, headline, explicație și CTA înainte de pizza animată discret.",
               "textSafety": "Textul și CTA rămân în flux, pe fundal întunecat opac."
             },
             "asset": {
               "status": "implemented",
-              "subject": "pizza stilizată originală",
-              "productionBrief": "Ilustrație CSS din ingrediente grafice; logo original furnizat de client în footer.",
-              "mobileCrop": "Cercul complet rămâne vizibil.",
-              "rights": "Logo furnizat de client; ilustrație originală.",
-              "source": "styles.css"
+              "subject": "Logo original furnizat de client plus pizza stilizată CSS",
+              "productionBrief": "Logo-ul JPEG furnizat în brief, păstrat fără retușare; pizza și aura sunt implementate în CSS.",
+              "mobileCrop": "Logo-ul complet și pizza circulară rămân vizibile.",
+              "rights": "Logo furnizat de client; ilustrație originală CSS.",
+              "source": "assets/logo.jpeg, styles.css"
             },
             "choreography": [
               {

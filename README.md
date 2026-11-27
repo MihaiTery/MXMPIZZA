@@ -19,3 +19,7 @@ Site static în limba română pentru meniul MXM PIZZA. Deschide-l printr-un ser
 Workflow-ul `.github/workflows/pages.yml` publică ramura `main` prin GitHub Actions. În repo, configurează Settings → Pages → Build and deployment → Source: GitHub Actions. Pagina rămâne `noindex` și marcată preview până la confirmarea datelor comerciale.
 
 URL public: https://mihaitery.github.io/MXMPIZZA/
+
+## Hero animat
+
+Logo-ul original este afișat în primul ecran. Pizza este desenată în CSS și reacționează la cursor pe dispozitive cu pointer fin; levitația și aura se opresc în afara ecranului și când fila este ascunsă. `prefers-reduced-motion` păstrează compoziția statică. Direcția rămâne în așteptarea verificării ownerului.

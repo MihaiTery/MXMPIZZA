@@ -18,3 +18,20 @@ document.querySelector('#accountButton').addEventListener('click',()=>document.q
 document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.close).close()));
 document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d)d.close()}));
 fetch('menu.json').then(r=>r.json()).then(items=>{state.items=items;renderFilters();renderMenu();renderCart()}).catch(()=>{grid.innerHTML='<p class="empty-results">Meniul nu s-a putut încărca. Reîncarcă pagina.</p>'});
+
+// Pointer motion stays on the decorative pizza; text and controls remain still.
+(()=>{
+ const hero=document.querySelector('.hero');
+ const art=document.querySelector('.hero-art');
+ if(!hero||!art)return;
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const fine=matchMedia('(hover: hover) and (pointer: fine)');
+ let visible=true,frame=0,targetX=0,targetY=0;
+ const reset=()=>{targetX=targetY=0;art.style.setProperty('--move-x','0px');art.style.setProperty('--move-y','0px');art.style.setProperty('--tilt-x','0deg');art.style.setProperty('--tilt-y','0deg')};
+ const update=()=>{frame=0;if(!visible||reduced.matches||!fine.matches)return reset();art.style.setProperty('--move-x',`${(targetX*24).toFixed(1)}px`);art.style.setProperty('--move-y',`${(targetY*20).toFixed(1)}px`);art.style.setProperty('--tilt-x',`${(-targetY*9).toFixed(1)}deg`);art.style.setProperty('--tilt-y',`${(targetX*9).toFixed(1)}deg`)};
+ art.addEventListener('pointermove',e=>{if(!visible||reduced.matches||!fine.matches)return;const r=art.getBoundingClientRect();targetX=Math.max(-1,Math.min(1,((e.clientX-r.left)/r.width-.5)*2));targetY=Math.max(-1,Math.min(1,((e.clientY-r.top)/r.height-.5)*2));if(!frame)frame=requestAnimationFrame(update)});
+ art.addEventListener('pointerleave',reset);
+ const observer=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting&&!document.hidden;hero.dataset.artActive=String(visible);if(!visible)reset()},{threshold:0});observer.observe(hero);
+ document.addEventListener('visibilitychange',()=>{visible=!document.hidden&&hero.getBoundingClientRect().bottom>0&&hero.getBoundingClientRect().top<innerHeight;hero.dataset.artActive=String(visible);if(!visible)reset()});
+ reduced.addEventListener('change',()=>{if(reduced.matches)reset()});
+})();

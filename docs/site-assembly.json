@@ -7,7 +7,6 @@
     {
       "path": "/",
       "missingPageContent": [
-        "page title",
         "meta description"
       ],
       "sections": [
@@ -46,7 +45,7 @@
             {
               "name": "hero.media",
               "status": "authored",
-              "value": "Ilustrație originală pizza în CSS"
+              "value": "Logo-ul original MXM Food / Miky’s Pizza și pizza CSS animată, reactivă la cursor."
             },
             {
               "name": "button.primary",
@@ -78,13 +77,18 @@
               "sectionId": "hero",
               "componentId": "component.hero.editorial-split.v1",
               "target": "hero.media",
-              "requestedEffectId": "effect.none.v1",
+              "requestedEffectId": "effect.custom.pointer-tilt.v1",
               "appliedEffectId": "effect.none.v1",
-              "status": "none",
-              "selectionSource": "rail",
-              "attempts": [],
+              "status": "needs-agent-implementation",
+              "selectionSource": "user",
+              "attempts": [
+                {
+                  "effectId": "effect.custom.pointer-tilt.v1",
+                  "reason": "Unknown effect ID."
+                }
+              ],
               "availableFallbackEffectId": null,
-              "reason": "No compatible reusable effect; content remains in its static state."
+              "reason": "Explicit user effect requires a brand-specific implementation; fallback is a disclosed option only."
             }
           ],
           "unmountedEffectTargets": [],
@@ -122,20 +126,28 @@
               "name": "section.body",
               "status": "authored",
               "value": "55 de produse din documentele clientului, cu căutare și filtre."
+            },
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "Tot meniul. Fără pauză."
+            },
+            {
+              "name": "features.items",
+              "status": "authored",
+              "value": "55 de produse din menu.json"
             }
           ],
           "authoredSlots": [
             "section.title",
-            "section.body"
+            "section.body",
+            "section.heading",
+            "features.items"
           ],
           "missing": [
             {
               "slot": "features.items",
               "label": "feature items"
-            },
-            {
-              "slot": "section.heading",
-              "label": "section.heading"
             }
           ],
           "tokens": "manifest.designTokens / brand-signature.css",
@@ -171,17 +183,18 @@
               "name": "section.title",
               "status": "authored",
               "value": "Pofta nu se uită la ceas."
+            },
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "Pofta nu se uită la ceas."
             }
           ],
           "authoredSlots": [
-            "section.title"
+            "section.title",
+            "section.heading"
           ],
-          "missing": [
-            {
-              "slot": "section.heading",
-              "label": "section.heading"
-            }
-          ],
+          "missing": [],
           "tokens": "manifest.designTokens / brand-signature.css",
           "effects": [],
           "unmountedEffectTargets": [],
@@ -219,18 +232,19 @@
               "name": "section.body",
               "status": "authored",
               "value": "Coș și cont demonstrative; platformă separată în pregătire."
+            },
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "Un click mai aproape de poftă."
             }
           ],
           "authoredSlots": [
             "section.title",
-            "section.body"
+            "section.body",
+            "section.heading"
           ],
-          "missing": [
-            {
-              "slot": "section.heading",
-              "label": "section.heading"
-            }
-          ],
+          "missing": [],
           "tokens": "manifest.designTokens / brand-signature.css",
           "effects": [],
           "unmountedEffectTargets": [],
@@ -354,7 +368,26 @@
     "rail-effects-init.mjs",
     "brand-signature.css"
   ],
-  "pendingEffects": [],
+  "pendingEffects": [
+    {
+      "page": "/",
+      "sectionId": "hero",
+      "componentId": "component.hero.editorial-split.v1",
+      "target": "hero.media",
+      "requestedEffectId": "effect.custom.pointer-tilt.v1",
+      "appliedEffectId": "effect.none.v1",
+      "status": "needs-agent-implementation",
+      "selectionSource": "user",
+      "attempts": [
+        {
+          "effectId": "effect.custom.pointer-tilt.v1",
+          "reason": "Unknown effect ID."
+        }
+      ],
+      "availableFallbackEffectId": null,
+      "reason": "Explicit user effect requires a brand-specific implementation; fallback is a disclosed option only."
+    }
+  ],
   "integration": {
     "pageAttribute": null,
     "componentCss": "rail-components.css",

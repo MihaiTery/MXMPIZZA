@@ -5,3 +5,35 @@
 @media(max-width:350px){.header-actions{gap:4px}.icon-button{font-size:0}.mock-dot{width:8px;height:8px}.hero h1{font-size:65px}.hero-side-note{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.product-card{transition:none}.product-card:hover{transform:none}}
 .footer-brand img{display:block;width:min(100%,420px);height:auto;object-fit:contain;mix-blend-mode:screen}
+
+/* MXM hero: original logo, glowing oven atmosphere and pointer-reactive pizza. */
+.hero{background:radial-gradient(circle at 73% 48%,#71301a 0%,#3b1a13 25%,#161211 56%,#10100f 76%)}
+.hero::before{content:"";position:absolute;width:56vw;height:56vw;max-width:750px;max-height:750px;right:1%;top:50%;translate:0 -50%;border-radius:50%;background:radial-gradient(circle,#f0441d24 0%,#b92b1414 42%,transparent 68%);filter:blur(12px);pointer-events:none;animation:oven-breathe 5s ease-in-out infinite alternate}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.15;background-image:repeating-linear-gradient(110deg,transparent 0 53px,#f4b25f20 54px,transparent 55px 110px);mask-image:linear-gradient(90deg,transparent 30%,#000 100%)}
+.hero-logo{display:block;width:clamp(220px,25vw,410px);height:auto;max-height:188px;object-fit:contain;object-position:left center;margin:0 0 13px -15px;mix-blend-mode:screen;filter:drop-shadow(0 8px 22px #ed481a45);animation:logo-arrive .7s cubic-bezier(.2,.8,.2,1) both}
+.hero-copy .eyebrow{margin:0 0 18px}
+.hero h1{margin:18px 0 28px;text-shadow:0 8px 28px #0005}
+.hero h1 em{color:#ff5436;text-shadow:0 0 30px #d72e2470}
+.hero-art{perspective:850px;isolation:isolate}
+.hero-art::before{content:"";position:absolute;width:75%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f5a34455 0%,#e44c242b 34%,transparent 70%);filter:blur(28px);animation:oven-breathe 4s ease-in-out infinite alternate;pointer-events:none}
+.hero-art::after{content:"";position:absolute;bottom:13%;width:62%;height:12%;border-radius:50%;background:#000a;filter:blur(18px);transform:translateX(calc(var(--move-x,0px) * .3));pointer-events:none}
+.pizza-motion{position:relative;z-index:2;transform:translate3d(var(--move-x,0px),var(--move-y,0px),0) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transform-style:preserve-3d;transition:transform .18s ease-out;will-change:transform}
+.pizza{width:min(37vw,530px);animation:pizza-float 5s ease-in-out infinite;transform-origin:center}
+.pizza:before{content:"";position:absolute;inset:-9%;border-radius:50%;border:2px solid #ffb45e8a;box-shadow:0 0 35px #f67a3540;pointer-events:none}
+.art-orbit{animation:orbit-breathe 8s ease-in-out infinite alternate;opacity:.8}
+.orbit-two{animation-delay:-4s}
+.art-spark{animation:spark-drift 3s ease-in-out infinite alternate}
+.spark-b{animation-delay:-1.4s}
+.art-stamp{box-shadow:0 13px 30px #0007;animation:stamp-pop .75s .3s cubic-bezier(.2,.9,.2,1.3) both}
+.pointer-hint{position:absolute;bottom:13%;right:8%;font-size:10px;font-weight:800;letter-spacing:.15em;color:#efd0ac;z-index:3;opacity:.8}
+.hero[data-art-active="false"]::before,.hero[data-art-active="false"] .hero-art::before,.hero[data-art-active="false"] .pizza,.hero[data-art-active="false"] .art-orbit,.hero[data-art-active="false"] .art-spark{animation-play-state:paused}
+@keyframes logo-arrive{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes oven-breathe{from{opacity:.45;transform:scale(.92)}to{opacity:1;transform:scale(1.08)}}
+@keyframes pizza-float{0%,100%{transform:rotate(-18deg) translateY(0)}50%{transform:rotate(-15deg) translateY(-13px)}}
+@keyframes orbit-breathe{from{opacity:.35;scale:.96}to{opacity:.85;scale:1.03}}
+@keyframes spark-drift{from{opacity:.5;translate:0 0}to{opacity:1;translate:5px -10px}}
+@keyframes stamp-pop{from{opacity:0;transform:rotate(25deg) scale(.55)}to{opacity:1;transform:rotate(16deg) scale(1)}}
+@media(max-width:1000px){.hero-logo{width:clamp(200px,28vw,330px)}.pizza{width:43vw}}
+@media(max-width:700px){.hero-logo{width:min(78vw,330px);max-height:155px;margin-left:-10px}.hero-copy .eyebrow{margin-top:4px}.hero h1{margin:20px 0 25px}.pizza{width:min(75vw,350px)}.pointer-hint{display:none}.hero-art::after{bottom:10%}}
+@media(hover:none),(pointer:coarse){.pointer-hint{display:none}.pizza-motion{will-change:auto}}
+@media(prefers-reduced-motion:reduce){.hero::before,.hero-art::before,.pizza,.art-orbit,.art-spark,.art-stamp,.hero-logo{animation:none!important}.pizza-motion{transform:none!important;transition:none!important;will-change:auto}.hero-logo,.art-stamp{opacity:1}.pizza{transform:rotate(-18deg)}}
