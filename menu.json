@@ -489,21 +489,28 @@
     "id": "soup-01",
     "category": "supe",
     "name": "Supă cremă de roșii",
-    "description": "Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.",
+    "description": "Ingrediente: usturoi, ceapă, pulpă de roșii, busuioc, ulei de măsline, sare, piper și crutoane.",
     "price": null,
     "available": null,
-    "mock": true,
-    "badge": "Produs mock"
+    "source": "client"
   },
   {
     "id": "soup-02",
     "category": "supe",
     "name": "Supă cremă de ciuperci",
-    "description": "Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.",
+    "description": "Ingrediente: ceapă, ulei de măsline, unt, ciuperci champignon, hribi, nucșoară, Gran Cucina, crutoane, sare și piper alb.",
     "price": null,
     "available": null,
-    "mock": true,
-    "badge": "Produs mock"
+    "source": "client"
+  },
+  {
+    "id": "soup-03",
+    "category": "supe",
+    "name": "Supă cremă de legume",
+    "description": "Ingrediente: păstârnac, cartof, morcov, țelină, Knorr, ulei de măsline, ceapă, usturoi, pătrunjel, ardei gras, unt, Gran Cucina, sare, piper și crutoane.",
+    "price": null,
+    "available": null,
+    "source": "client"
   },
   {
     "id": "p43",

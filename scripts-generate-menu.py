@@ -32,7 +32,11 @@ for n, item in enumerate((x for x in items if x['category']=='pizza'), 1):
  ingredients=re.sub(r'\b\d+\s*g?\b','',ingredients)
  ingredients=re.sub(r'\s*,\s*',', ',ingredients).strip(' ,.;')
  pizza50.append({'id':f'p50-{n:02d}','category':'pizza50','name':item['name']+' 50 cm','description':f'{ingredients}. Gramajul pentru 50 cm se confirmă.','price':None,'available':None,'mock':True,'badge':'Variantă propusă'})
-soups=[{'id':'soup-01','category':'supe','name':'Supă cremă de roșii','description':'Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.','price':None,'available':None,'mock':True,'badge':'Produs mock'}, {'id':'soup-02','category':'supe','name':'Supă cremă de ciuperci','description':'Produs demonstrativ. Rețeta, gramajul și disponibilitatea se confirmă.','price':None,'available':None,'mock':True,'badge':'Produs mock'}]
+soups=[
+ {'id':'soup-01','category':'supe','name':'Supă cremă de roșii','description':'Ingrediente: usturoi, ceapă, pulpă de roșii, busuioc, ulei de măsline, sare, piper și crutoane.','price':None,'available':None,'source':'client'},
+ {'id':'soup-02','category':'supe','name':'Supă cremă de ciuperci','description':'Ingrediente: ceapă, ulei de măsline, unt, ciuperci champignon, hribi, nucșoară, Gran Cucina, crutoane, sare și piper alb.','price':None,'available':None,'source':'client'},
+ {'id':'soup-03','category':'supe','name':'Supă cremă de legume','description':'Ingrediente: păstârnac, cartof, morcov, țelină, Knorr, ulei de măsline, ceapă, usturoi, pătrunjel, ardei gras, unt, Gran Cucina, sare, piper și crutoane.','price':None,'available':None,'source':'client'}
+]
 pizza_end=next(i for i,x in enumerate(items) if x['category']!='pizza')
 items[pizza_end:pizza_end]=pizza50
 soup_at=next(i for i,x in enumerate(items) if x['category']=='deserturi')

@@ -361,7 +361,7 @@
       18,
       19
     ],
-    "rationale": "Catalogul de 72 de poziții este grupat în categorii vizibile, cu navigare orizontală explicită. Variantele 50 cm și supele sunt marcate ca propuneri. Apelul rămâne demonstrativ.",
+    "rationale": "Catalogul de 73 de poziții este grupat în categorii vizibile, cu navigare orizontală explicită. Variantele de pizza 50 cm sunt marcate ca propuneri. Cele trei supe cremă folosesc rețetele furnizate de client.",
     "tokens": {
       "feedbackMs": 150,
       "commonTransitionMs": 240,
@@ -410,7 +410,7 @@
       {
         "path": "/",
         "title": "MXM PIZZA — poftă la orice oră",
-        "description": "MXM PIZZA: pizza 32 și 50 cm, shaorma, meniuri, paste, salate, supe cremă propuse, deserturi și băuturi. Comenzile online sunt în pregătire."
+        "description": "MXM PIZZA: pizza 32 și 50 cm, shaorma, meniuri, paste, salate, trei supe cremă, deserturi și băuturi. Comenzile online sunt în pregătire."
       }
     ],
     "crawlPlan": "noindex pentru preview public; canonical către URL-ul GitHub Pages. Elimină noindex numai după confirmarea datelor comerciale și lansarea comenzilor.",
@@ -571,7 +571,7 @@
             "fingerprint": "1ea3ec41f6a0401b80a301006d6249773226281d441a0dbf893b792dd501d64b",
             "brandAnchor": {
               "brand": "MXM PIZZA",
-              "offer": "72 de produse și variante: 55 din documente, 15 pizza de 50 cm propuse și 2 supe cremă mock",
+              "offer": "73 de produse și variante: 55 din documente, 15 pizza de 50 cm propuse și 3 supe cremă cu rețete furnizate de client",
               "audience": "clienți din București",
               "goal": "meniu complet și pregătire pentru comenzi online"
             },
@@ -651,7 +651,7 @@
             {
               "name": "section.body",
               "status": "authored",
-              "value": "72 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate, săgeți de derulare și marcaje pentru propunerile mock."
+              "value": "73 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate și săgeți de derulare. Supele cremă au ingrediente corectate ortografic."
             },
             {
               "name": "section.heading",
@@ -661,7 +661,7 @@
             {
               "name": "features.items",
               "status": "authored",
-              "value": "72 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 2 supe cremă mock."
+              "value": "73 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 3 supe cremă cu rețete furnizate de client."
             }
           ],
           "responsive": {

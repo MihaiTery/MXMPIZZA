@@ -125,7 +125,7 @@
             {
               "name": "section.body",
               "status": "authored",
-              "value": "72 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate, săgeți de derulare și marcaje pentru propunerile mock."
+              "value": "73 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate și săgeți de derulare. Supele cremă au ingrediente corectate ortografic."
             },
             {
               "name": "section.heading",
@@ -135,7 +135,7 @@
             {
               "name": "features.items",
               "status": "authored",
-              "value": "72 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 2 supe cremă mock."
+              "value": "73 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 3 supe cremă cu rețete furnizate de client."
             }
           ],
           "authoredSlots": [
