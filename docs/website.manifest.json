@@ -378,7 +378,7 @@
       "keyboard": "Dialoguri native, focus vizibil și link de salt.",
       "reducedMotion": "Logo și pizza statice; fără tilt, levitație sau scroll animat.",
       "whatsapp": "Widget demonstrativ accesibil pe mobil și desktop; deschide dialog, permite redactare locală și sugestii de mesaj; trimiterea rămâne dezactivată până la adăugarea numărului.",
-      "cart": "Butonul coșului rămâne fix în viewport pe mobil și desktop, deasupra widgetului WhatsApp; dialogul nativ se deschide din orice secțiune."
+      "cart": "Coșul este control fix la 98 px de baza ecranului pe desktop și 80 px pe mobil; valorile CSS au fallback explicit înainte de safe-area env(). URL-ul CSS este versionat pentru cache."
     }
   },
   "performanceEngineering": {
