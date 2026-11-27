@@ -579,7 +579,7 @@
             "fingerprint": "1ea3ec41f6a0401b80a301006d6249773226281d441a0dbf893b792dd501d64b",
             "brandAnchor": {
               "brand": "MXM PIZZA",
-              "offer": "73 de produse și variante: 55 din documente, 15 pizza de 50 cm propuse și 3 supe cremă cu rețete furnizate de client",
+              "offer": "78 de produse și variante: 55 din documente, 15 pizza de 50 cm propuse, 3 supe cremă și 5 băuturi adăugate la cererea clientului",
               "audience": "clienți din București",
               "goal": "meniu complet și pregătire pentru comenzi online"
             },
@@ -706,7 +706,7 @@
             {
               "name": "section.body",
               "status": "authored",
-              "value": "73 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate și săgeți de derulare. Supele cremă au ingrediente corectate ortografic."
+              "value": "78 de produse și variante, cu titluri roșu-portocaliu, categorii încadrate și săgeți de derulare."
             },
             {
               "name": "section.heading",
@@ -716,7 +716,7 @@
             {
               "name": "features.items",
               "status": "authored",
-              "value": "73 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 3 supe cremă cu rețete furnizate de client."
+              "value": "78 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse, 3 supe cremă și 5 băuturi adăugate ulterior."
             },
             {
               "name": "menu.copyCorrection",
@@ -726,7 +726,7 @@
             {
               "name": "menu.editorialStatus",
               "status": "authored",
-              "value": "Toate cele 73 de denumiri și descrieri au fost revizuite ortografic; cantitățile din documentele sursă nu au fost modificate."
+              "value": "Denumirile inițiale au fost revizuite ortografic; cele cinci băuturi noi folosesc ortografia mărcilor Heineken și Stella Artois. Cantitățile din documentele sursă nu au fost modificate."
             }
           ],
           "responsive": {

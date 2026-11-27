@@ -615,5 +615,50 @@
     "description": "",
     "price": null,
     "available": null
+  },
+  {
+    "id": "drink-fresh-orange",
+    "category": "bauturi",
+    "name": "Fresh de portocale",
+    "description": "",
+    "price": null,
+    "available": null,
+    "source": "client"
+  },
+  {
+    "id": "drink-ayran",
+    "category": "bauturi",
+    "name": "Ayran",
+    "description": "",
+    "price": null,
+    "available": null,
+    "source": "client"
+  },
+  {
+    "id": "drink-heineken",
+    "category": "bauturi",
+    "name": "Heineken 0,33 l",
+    "description": "",
+    "price": null,
+    "available": null,
+    "source": "client"
+  },
+  {
+    "id": "drink-stella",
+    "category": "bauturi",
+    "name": "Stella Artois 0,33 l",
+    "description": "",
+    "price": null,
+    "available": null,
+    "source": "client"
+  },
+  {
+    "id": "drink-ursus",
+    "category": "bauturi",
+    "name": "Ursus 0,33 l",
+    "description": "",
+    "price": null,
+    "available": null,
+    "source": "client"
   }
 ]

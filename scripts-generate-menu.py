@@ -27,7 +27,7 @@ for category,name in files:
    items.append({'id':f'p{len(items)+1:02d}','category':subcat,'name':title[0].upper()+title[1:],'description':detail,'price':None,'available':None})
 items=[polish_item(item) for item in items]
 # Product extensions requested for the website preview. The 32 cm recipes are the source;
-# exact 50 cm weights and the two soup recipes require client confirmation.
+# exact 50 cm weights require client confirmation.
 pizza50=[]
 for n, item in enumerate((x for x in items if x['category']=='pizza'), 1):
  ingredients=pizza_50_description(item['description'])
@@ -41,5 +41,13 @@ pizza_end=next(i for i,x in enumerate(items) if x['category']!='pizza')
 items[pizza_end:pizza_end]=pizza50
 soup_at=next(i for i,x in enumerate(items) if x['category']=='deserturi')
 items[soup_at:soup_at]=soups
+new_drinks=[
+ {'id':'drink-fresh-orange','category':'bauturi','name':'Fresh de portocale','description':'','price':None,'available':None,'source':'client'},
+ {'id':'drink-ayran','category':'bauturi','name':'Ayran','description':'','price':None,'available':None,'source':'client'},
+ {'id':'drink-heineken','category':'bauturi','name':'Heineken 0,33 l','description':'','price':None,'available':None,'source':'client'},
+ {'id':'drink-stella','category':'bauturi','name':'Stella Artois 0,33 l','description':'','price':None,'available':None,'source':'client'},
+ {'id':'drink-ursus','category':'bauturi','name':'Ursus 0,33 l','description':'','price':None,'available':None,'source':'client'}
+]
+items.extend(new_drinks)
 (root/'menu.json').write_text(json.dumps(items,ensure_ascii=False,indent=2)+'\n')
 print(len(items))

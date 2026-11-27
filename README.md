@@ -4,7 +4,7 @@ Site static în limba română pentru meniul MXM PIZZA. Deschide-l printr-un ser
 
 ## Conținut și integrare
 
-- `menu.json` conține 73 de poziții: 55 de produse extrase din cele șase documente `.docx` copiate în `source-docs/`, 15 variante de pizza de 50 cm propuse și trei supe cremă cu rețete furnizate de client. `scripts-generate-menu.py` documentează extracția inițială. Editările comerciale viitoare se fac în `menu.json`.
+- `menu.json` conține 78 de poziții: 55 de produse extrase din cele șase documente `.docx` copiate în `source-docs/`, 15 variante de pizza de 50 cm propuse și trei supe cremă cu rețete furnizate de client și cinci băuturi adăugate ulterior. `scripts-generate-menu.py` documentează extracția inițială. Editările comerciale viitoare se fac în `menu.json`.
 - `price: null` și `available: null` înseamnă informații neconfirmate. Nu publica prețuri sau stocuri fără datele clientului.
 - Coșul folosește `localStorage` doar pentru demonstrație. Contul este o interfață fără autentificare. Butonul de finalizare este dezactivat. Integrarea cu platforma de comenzi trebuie să furnizeze prețuri, disponibilitate, autentificare și plasarea reală a comenzilor.
 - Adresa și telefonul sunt afișate ca informații în curs de confirmare. Nu există date de contact fictive publicate.
@@ -34,7 +34,7 @@ Poziția fixă a coșului are fallback CSS explicit pentru browsere desktop care
 
 ## Extinderea meniului
 
-Catalogul are 73 de poziții: 55 extrase din documentele clientului, 15 variante pizza de 50 cm derivate din rețetele de 32 cm și trei supe cremă cu rețete furnizate ulterior de client. Variantele 50 cm nu copiază gramajele de 32 cm; cantitățile și disponibilitatea trebuie confirmate. Supele nu mai sunt marcate mock; prețurile, gramajele și disponibilitatea rămân neconfirmate. Butonul de apel afișează doar `07xx xxx xxx · DEMO` și nu inițiază apeluri.
+Catalogul are 78 de poziții: 55 extrase din documentele clientului, 15 variante pizza de 50 cm derivate din rețetele de 32 cm trei supe cremă cu rețete furnizate ulterior de client și cinci băuturi noi. Variantele 50 cm nu copiază gramajele de 32 cm; cantitățile și disponibilitatea trebuie confirmate. Supele nu mai sunt marcate mock; prețurile, gramajele și disponibilitatea rămân neconfirmate. Butonul de apel afișează doar `07xx xxx xxx · DEMO` și nu inițiază apeluri.
 
 Butonul alb „Sună” este fix în dreapta jos, deasupra coșului și a widgetului WhatsApp, pe mobil și desktop. Rămâne demonstrativ.
 
@@ -47,3 +47,5 @@ Denumirea „Paste cu pui și ciuperci” este corectată în generator și în 
 ## Revizie editorială meniu
 
 `menu_editorial.py` conține corecturile ortografice pentru toate cele 55 de produse din documente. Generatorul aplică aceste corecturi înainte de a crea cele 15 variante pizza de 50 cm. Cele trei supe rămân conform rețetelor furnizate ulterior. Cantitățile și totalurile din documentele originale nu au fost recalculate; la Pizza Quattro Stagioni documentul notează „ciuperci 20” fără unitate, afișată ca „cantitate de confirmat”.
+
+Băuturile adăugate ulterior: Fresh de portocale, Ayran, Heineken 0,33 l, Stella Artois 0,33 l și Ursus 0,33 l. Prețurile și disponibilitatea sunt încă neconfirmate.
