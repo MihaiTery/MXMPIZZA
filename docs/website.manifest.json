@@ -722,6 +722,11 @@
               "name": "menu.copyCorrection",
               "status": "authored",
               "value": "Paste cu pui și ciuperci"
+            },
+            {
+              "name": "menu.editorialStatus",
+              "status": "authored",
+              "value": "Toate cele 73 de denumiri și descrieri au fost revizuite ortografic; cantitățile din documentele sursă nu au fost modificate."
             }
           ],
           "responsive": {

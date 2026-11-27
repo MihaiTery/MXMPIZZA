@@ -2,128 +2,128 @@
   {
     "id": "p01",
     "category": "pizza",
-    "name": "Pizza margherita",
-    "description": "aluat 320g , mozzarella 150g,sos pizza 50g, busuioc 20 g, ulei masline ,total 500 g",
+    "name": "Pizza Margherita",
+    "description": "Ingrediente: aluat 320 g, mozzarella 150 g, sos de pizza 50 g, busuioc 20 g, ulei de măsline. Total: 500 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p02",
     "category": "pizza",
-    "name": "Pizza prosciutto cotto",
-    "description": "aluat 320g , mozzarella 100g sos pizza 50 g , sunca 100g, busuioc , ulei masline total 550g",
+    "name": "Pizza Prosciutto Cotto",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, șuncă 100 g, busuioc, ulei de măsline. Total: 550 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p03",
     "category": "pizza",
-    "name": "Pizza prosciutto funghi",
-    "description": "aluat320g, mozzarella 100g sos pizza 50 g, sunca 100g, ciuperci 50g , busuioc , ulei masline total 580g",
+    "name": "Pizza Prosciutto e Funghi",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, șuncă 100 g, ciuperci 50 g, busuioc, ulei de măsline. Total: 580 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p04",
     "category": "pizza",
-    "name": "Pizza quattro stagioni",
-    "description": "aluat320g, mozzarella 100g, sos pizza 50g,salam 50g, sunca 50g, ciuperci 20, masline 15g , busuioc,ulei masline, total 680g",
+    "name": "Pizza Quattro Stagioni",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, salam 50 g, șuncă 50 g, ciuperci (cantitate de confirmat), măsline 15 g, busuioc, ulei de măsline. Total: 680 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p05",
     "category": "pizza",
-    "name": "Pizza capriciosa",
-    "description": "aluat320g, mozzarella 100g, sos pizza 50g, sunca 50g, ciuperci 50g, masline 30g, ardei capia 30g, busuioc,ulei masline, total 630 g",
+    "name": "Pizza Capricciosa",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, șuncă 50 g, ciuperci 50 g, măsline 30 g, ardei capia 30 g, busuioc, ulei de măsline. Total: 630 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p06",
     "category": "pizza",
-    "name": "Pizza salami",
-    "description": "aluat320g, mozzarella 100g, sos pizza 50g salam napoli 100g, busuioc, ulei masline total 550g",
+    "name": "Pizza Salami",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, salam napoli 100 g, busuioc, ulei de măsline. Total: 550 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p07",
     "category": "pizza",
-    "name": "Pizza diavola",
-    "description": "aluat320g, mozzarella 100g, sos pizza 50g, salam picant ventricina 100g, jalapeno 50g,busuioc,ulei masline total 630g",
+    "name": "Pizza Diavola",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, salam picant ventricina 100 g, jalapeño 50 g, busuioc, ulei de măsline. Total: 630 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p08",
     "category": "pizza",
-    "name": "Pizza quattro formaggi",
-    "description": "aluat320g, mozzarella 150g, gorgonzola 50g, parmezan 30g, emmentaller 50g,busuioc,ulei masline, total 600g",
+    "name": "Pizza Quattro Formaggi",
+    "description": "Ingrediente: aluat 320 g, mozzarella 150 g, gorgonzola 50 g, parmezan 30 g, emmentaler 50 g, busuioc, ulei de măsline. Total: 600 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p09",
     "category": "pizza",
-    "name": "Pizza hot cheese",
-    "description": "aluat320g, mozzarella 150g, gorgonzola 50g, parmezan 30g, jalapeno 30g, busuioc,ulei masline, total 580g",
+    "name": "Pizza Hot Cheese",
+    "description": "Ingrediente: aluat 320 g, mozzarella 150 g, gorgonzola 50 g, parmezan 30 g, jalapeño 30 g, busuioc, ulei de măsline. Total: 580 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p10",
     "category": "pizza",
-    "name": "Pizza carnivora",
-    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, sunca 50g, salam napoli 50g, bacon 50g, carnati 50g, busuioc , ulei masline total 680g",
+    "name": "Pizza Carnivora",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, șuncă 50 g, salam napoli 50 g, bacon 50 g, cârnați 50 g, busuioc, ulei de măsline. Total: 680 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p11",
     "category": "pizza",
-    "name": "Pizza tonno e cipolla",
-    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, ton 70g, ceapa rosie 50g, masline 50g, busuioc, ulei masline total 630g",
+    "name": "Pizza Tonno e Cipolla",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, ton 70 g, ceapă roșie 50 g, măsline 50 g, busuioc, ulei de măsline. Total: 630 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p12",
     "category": "pizza",
-    "name": "Pizza mikys",
-    "description": "aluat320g, mozzarella 100g, sos pizza50g, carnati 50g, bacon 70g, porumb 20g, ceapa rosie 20g, ardei capia 20g, busuioc,ulei masline total 650g",
+    "name": "Pizza Miky's",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, cârnați 50 g, bacon 70 g, porumb 20 g, ceapă roșie 20 g, ardei capia 20 g, busuioc, ulei de măsline. Total: 650 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p13",
     "category": "pizza",
-    "name": "Pizza carbonara",
-    "description": "aluat320g, mozzarella 100g, sos alb 50g, bacon 100g, ou 30g, parmezan 20g, busuioc, ulei malsine total 620g",
+    "name": "Pizza Carbonara",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos alb 50 g, bacon 100 g, ou 30 g, parmezan 20 g, busuioc, ulei de măsline. Total: 620 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p14",
     "category": "pizza",
-    "name": "Pizza pollo",
-    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, piept pui 100g, porumb 20g, masline 50g, busuioc, ulei masline total 630g",
+    "name": "Pizza Pollo",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, piept de pui 100 g, porumb 20 g, măsline 50 g, busuioc, ulei de măsline. Total: 630 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p15",
     "category": "pizza",
-    "name": "Pizza vegetariana",
-    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, ciuperci 50g, masline 50g, ceapa rosie 20g, ardei capia 20g, porumb 20g, busuioc , ulei masline total 630g",
+    "name": "Pizza vegetariană",
+    "description": "Ingrediente: aluat 320 g, mozzarella 100 g, sos de pizza 50 g, ciuperci 50 g, măsline 50 g, ceapă roșie 20 g, ardei capia 20 g, porumb 20 g, busuioc, ulei de măsline. Total: 630 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p50-01",
     "category": "pizza50",
-    "name": "Pizza margherita 50 cm",
-    "description": "aluat, mozzarella, sos pizza, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Margherita 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -132,8 +132,8 @@
   {
     "id": "p50-02",
     "category": "pizza50",
-    "name": "Pizza prosciutto cotto 50 cm",
-    "description": "aluat, mozzarella  sos pizza, sunca, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Prosciutto Cotto 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, șuncă, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -142,8 +142,8 @@
   {
     "id": "p50-03",
     "category": "pizza50",
-    "name": "Pizza prosciutto funghi 50 cm",
-    "description": "aluat320g, mozzarella  sos pizza, sunca, ciuperci, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Prosciutto e Funghi 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, șuncă, ciuperci, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -152,8 +152,8 @@
   {
     "id": "p50-04",
     "category": "pizza50",
-    "name": "Pizza quattro stagioni 50 cm",
-    "description": "aluat320g, mozzarella, sos pizza, salam, sunca, ciuperci, masline, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Quattro Stagioni 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, salam, șuncă, ciuperci, măsline, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -162,8 +162,8 @@
   {
     "id": "p50-05",
     "category": "pizza50",
-    "name": "Pizza capriciosa 50 cm",
-    "description": "aluat320g, mozzarella, sos pizza, sunca, ciuperci, masline, ardei capia, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Capricciosa 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, șuncă, ciuperci, măsline, ardei capia, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -172,8 +172,8 @@
   {
     "id": "p50-06",
     "category": "pizza50",
-    "name": "Pizza salami 50 cm",
-    "description": "aluat320g, mozzarella, sos pizza  salam napoli, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Salami 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, salam napoli, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -182,8 +182,8 @@
   {
     "id": "p50-07",
     "category": "pizza50",
-    "name": "Pizza diavola 50 cm",
-    "description": "aluat320g, mozzarella, sos pizza, salam picant ventricina, jalapeno, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Diavola 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, salam picant ventricina, jalapeño, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -192,8 +192,8 @@
   {
     "id": "p50-08",
     "category": "pizza50",
-    "name": "Pizza quattro formaggi 50 cm",
-    "description": "aluat320g, mozzarella, gorgonzola, parmezan, emmentaller, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Quattro Formaggi 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, gorgonzola, parmezan, emmentaler, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -202,8 +202,8 @@
   {
     "id": "p50-09",
     "category": "pizza50",
-    "name": "Pizza hot cheese 50 cm",
-    "description": "aluat320g, mozzarella, gorgonzola, parmezan, jalapeno, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Hot Cheese 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, gorgonzola, parmezan, jalapeño, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -212,8 +212,8 @@
   {
     "id": "p50-10",
     "category": "pizza50",
-    "name": "Pizza carnivora 50 cm",
-    "description": "aluat, mozzarella, sos pizza, sunca, salam napoli, bacon, carnati, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Carnivora 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, șuncă, salam napoli, bacon, cârnați, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -222,8 +222,8 @@
   {
     "id": "p50-11",
     "category": "pizza50",
-    "name": "Pizza tonno e cipolla 50 cm",
-    "description": "aluat, mozzarella, sos pizza, ton, ceapa rosie, masline, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Tonno e Cipolla 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, ton, ceapă roșie, măsline, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -232,8 +232,8 @@
   {
     "id": "p50-12",
     "category": "pizza50",
-    "name": "Pizza mikys 50 cm",
-    "description": "aluat320g, mozzarella, sos pizza50g, carnati, bacon, porumb, ceapa rosie, ardei capia, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Miky's 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, cârnați, bacon, porumb, ceapă roșie, ardei capia, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -242,8 +242,8 @@
   {
     "id": "p50-13",
     "category": "pizza50",
-    "name": "Pizza carbonara 50 cm",
-    "description": "aluat320g, mozzarella, sos alb, bacon, ou, parmezan, busuioc, ulei malsine. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Carbonara 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos alb, bacon, ou, parmezan, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -252,8 +252,8 @@
   {
     "id": "p50-14",
     "category": "pizza50",
-    "name": "Pizza pollo 50 cm",
-    "description": "aluat, mozzarella, sos pizza, piept pui, porumb, masline, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza Pollo 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, piept de pui, porumb, măsline, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -262,8 +262,8 @@
   {
     "id": "p50-15",
     "category": "pizza50",
-    "name": "Pizza vegetariana 50 cm",
-    "description": "aluat, mozzarella, sos pizza, ciuperci, masline, ceapa rosie, ardei capia, porumb, busuioc, ulei masline. Gramajul pentru 50 cm se confirmă.",
+    "name": "Pizza vegetariană 50 cm",
+    "description": "Ingrediente: aluat, mozzarella, sos de pizza, ciuperci, măsline, ceapă roșie, ardei capia, porumb, busuioc, ulei de măsline. Gramajul pentru 50 cm se confirmă.",
     "price": null,
     "available": null,
     "mock": true,
@@ -272,64 +272,64 @@
   {
     "id": "p16",
     "category": "shaorma",
-    "name": "Shaorma pui mica",
-    "description": "piept pui 200g, lipie 50g, cartofi 50g, salate 50g, sos maioneza cu usturoi 50g, ketchup 50g, total 500g",
+    "name": "Shaorma de pui mică",
+    "description": "Ingrediente: piept de pui 200 g, lipie 50 g, cartofi 50 g, salate 50 g, sos de maioneză cu usturoi 50 g, ketchup 50 g. Total: 500 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p17",
     "category": "shaorma",
-    "name": "Shaorma pui mare",
-    "description": "piept pui 340g, lipie 70g, cartofi 100g, salate 160g, sos maioneza cu usturoi 75g, ketchup 75g, total 750g",
+    "name": "Shaorma de pui mare",
+    "description": "Ingrediente: piept de pui 340 g, lipie 70 g, cartofi 100 g, salate 160 g, sos de maioneză cu usturoi 75 g, ketchup 75 g. Total: 750 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p18",
     "category": "shaorma",
-    "name": "Shaorma vita-berbecut mica",
-    "description": "vita-berbecut 200g, lipie 50g, cartofi 50g, salate 50g, ketchup 50g, sos maioneza cu usturoi 50g, total 500g",
+    "name": "Shaorma de vită-berbecuț mică",
+    "description": "Ingrediente: vită-berbecuț 200 g, lipie 50 g, cartofi 50 g, salate 50 g, ketchup 50 g, sos de maioneză cu usturoi 50 g. Total: 500 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p19",
     "category": "shaorma",
-    "name": "Shaorma vita-berbecut mare",
-    "description": "Vita-berbecut 340g, lipie 70g, cartofi 100g,salate 150g, ketchup 75g, sos maioneza cu usturoi 75g, total 750g",
+    "name": "Shaorma de vită-berbecuț mare",
+    "description": "Ingrediente: vită-berbecuț 340 g, lipie 70 g, cartofi 100 g, salate 150 g, ketchup 75 g, sos de maioneză cu usturoi 75 g. Total: 750 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p20",
     "category": "shaorma",
-    "name": "Shaorma mixta mica",
-    "description": "Pui,vita-berbecut 200g, lipie 50g, cartofi 50g, salate 50g, ketchup 50g, sos maioneza cu usturoi 50g, total 500g",
+    "name": "Shaorma mixtă mică",
+    "description": "Ingrediente: pui și vită-berbecuț 200 g, lipie 50 g, cartofi 50 g, salate 50 g, ketchup 50 g, sos de maioneză cu usturoi 50 g. Total: 500 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p21",
     "category": "shaorma",
-    "name": "Shaorma mixta mare",
-    "description": "Pui,vita-berbecut 340g, lipie 70g, cartofi 100g, salate 150g, ketchup 75g, sos maioneza cu usturoi 75g, total 750g",
+    "name": "Shaorma mixtă mare",
+    "description": "Ingrediente: pui și vită-berbecuț 340 g, lipie 70 g, cartofi 100 g, salate 150 g, ketchup 75 g, sos de maioneză cu usturoi 75 g. Total: 750 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p22",
     "category": "shaorma",
-    "name": "Kebab pui",
-    "description": "Chifla 120g, piept pui 100g, cartofi 50g, salate 50g, ketchup 50g, maioneza cu usturoi 50g, total 400g",
+    "name": "Kebab de pui",
+    "description": "Ingrediente: chiflă 120 g, piept de pui 100 g, cartofi 50 g, salate 50 g, ketchup 50 g, maioneză cu usturoi 50 g. Total: 400 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p23",
     "category": "shaorma",
-    "name": "Kebab vita-berbecut",
-    "description": "Chifla 120g, vita-berbecut 100g, cartofi 50g, salate 50g, ketchup 50g, maioneza cu usturoi 50g, total 400g",
+    "name": "Kebab de vită-berbecuț",
+    "description": "Ingrediente: chiflă 120 g, vită-berbecuț 100 g, cartofi 50 g, salate 50 g, ketchup 50 g, maioneză cu usturoi 50 g. Total: 400 g.",
     "price": null,
     "available": null
   },
@@ -337,23 +337,23 @@
     "id": "p24",
     "category": "shaorma",
     "name": "Kebab mixt",
-    "description": "Chifla 120g, pui-vita-berbecut 100g, cartofi 50g, salate 50g, ketchup 50g, maioneza cu usturoi 50g, total 400g",
+    "description": "Ingrediente: chiflă 120 g, pui și vită-berbecuț 100 g, cartofi 50 g, salate 50 g, ketchup 50 g, maioneză cu usturoi 50 g. Total: 400 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p25",
     "category": "shaorma",
-    "name": "Shaorma cheese pui",
-    "description": "pui 200g, lipie 50g, cartofi 50g, salate 50g, cheddar 50g, ketchup 50g, maioneza cu usturoi 50g, total 550g",
+    "name": "Shaorma cheese cu pui",
+    "description": "Ingrediente: pui 200 g, lipie 50 g, cartofi 50 g, salate 50 g, cheddar 50 g, ketchup 50 g, maioneză cu usturoi 50 g. Total: 550 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p26",
     "category": "shaorma",
-    "name": "Shaorma cheese vita-berbecut",
-    "description": "Vita-berbecut 340g, lipie 70g, cartofi 100g, salate 100g, cheddar 70g, ketchup 75g, maioneza cu usturoi 75g, total 800g",
+    "name": "Shaorma cheese cu vită-berbecuț",
+    "description": "Ingrediente: vită-berbecuț 340 g, lipie 70 g, cartofi 100 g, salate 100 g, cheddar 70 g, ketchup 75 g, maioneză cu usturoi 75 g. Total: 800 g.",
     "price": null,
     "available": null
   },
@@ -361,15 +361,15 @@
     "id": "p27",
     "category": "meniu",
     "name": "Meniu crispy",
-    "description": "Crispy 200g, cartofi prajiti 150g, sos usturoi 50g, ketchup 50g, salate 100g, chifla 50g, total 450g",
+    "description": "Ingrediente: crispy 200 g, cartofi prăjiți 150 g, sos de usturoi 50 g, ketchup 50 g, salate 100 g, chiflă 50 g. Total: 450 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p28",
     "category": "meniu",
-    "name": "Meniu aripioare",
-    "description": "Aripioare pui 250g, cartofi prajiti 100g, salate 100g, sos usturoi 50 g, ketchup 50g, chifla 50g, total 500g,",
+    "name": "Meniu aripioare de pui",
+    "description": "Ingrediente: aripioare de pui 250 g, cartofi prăjiți 100 g, salate 100 g, sos de usturoi 50 g, ketchup 50 g, chiflă 50 g. Total: 500 g.",
     "price": null,
     "available": null
   },
@@ -377,47 +377,47 @@
     "id": "p29",
     "category": "meniu",
     "name": "Meniu aripioare picante",
-    "description": "Aripioare picante 250g, cartofi prajiti 100g, salate 100g, sos anatolya 50g, total 500g",
+    "description": "Ingrediente: aripioare picante 250 g, cartofi prăjiți 100 g, salate 100 g, sos Anatolya 50 g. Total: 500 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p30",
     "category": "meniu",
-    "name": "Meniu nuggets",
-    "description": "nuggets pui 200g, cartofi prajiti 100g, sos maioneza 50g, total 350g",
+    "name": "Meniu nuggets de pui",
+    "description": "Ingrediente: nuggets de pui 200 g, cartofi prăjiți 100 g, sos de maioneză 50 g. Total: 350 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p31",
     "category": "meniu",
-    "name": "Schnitzel gratinat diavola",
-    "description": "Schnitzel pui 200g, ventricina 50g, mozzarella 50g, jalapeno 20g, total 320g",
+    "name": "Șnițel gratinat Diavola",
+    "description": "Ingrediente: șnițel de pui 200 g, ventricina 50 g, mozzarella 50 g, jalapeño 20 g. Total: 320 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p32",
     "category": "meniu",
-    "name": "Schnitzel gratinat carbonara",
-    "description": "schnitzel pui 200g , gran cucina 50g, guanciale 50g, parmezan 20g, total 320g",
+    "name": "Șnițel gratinat Carbonara",
+    "description": "Ingrediente: șnițel de pui 200 g, Gran Cucina 50 g, guanciale 50 g, parmezan 20 g. Total: 320 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p33",
     "category": "meniu",
-    "name": "Schnitzel gratinat quattro formaggi",
-    "description": "schnitzel pui 200g, mozzarella 50g, gorgonzola 50g,emmentaller 20g, parmezan 20g, total 340g",
+    "name": "Șnițel gratinat Quattro Formaggi",
+    "description": "Ingrediente: șnițel de pui 200 g, mozzarella 50 g, gorgonzola 50 g, emmentaler 20 g, parmezan 20 g. Total: 340 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p34",
     "category": "paste",
-    "name": "Paste arabiata",
-    "description": "paste 225 g , sos rosii 50g, ardei iute 20g, ulei masline , busuioc, sare, piper, total 300g",
+    "name": "Paste arrabbiata",
+    "description": "Ingrediente: paste 225 g, sos de roșii 50 g, ardei iute 20 g, ulei de măsline, busuioc, sare, piper. Total: 300 g.",
     "price": null,
     "available": null
   },
@@ -425,7 +425,7 @@
     "id": "p35",
     "category": "paste",
     "name": "Paste amatriciana",
-    "description": "Paste 225 g , sos rosii 50g, guanciale 50g, busuioc, ulei de masline , sare , piper, total 320g",
+    "description": "Ingrediente: paste 225 g, sos de roșii 50 g, guanciale 50 g, busuioc, ulei de măsline, sare, piper. Total: 320 g.",
     "price": null,
     "available": null
   },
@@ -433,7 +433,7 @@
     "id": "p36",
     "category": "paste",
     "name": "Paste carbonara",
-    "description": "paste 225g, ou 30g, parmezan 30g,guanciale 50g, ulei masline , sare, piper, total 350g",
+    "description": "Ingrediente: paste 225 g, ou 30 g, parmezan 30 g, guanciale 50 g, ulei de măsline, sare, piper. Total: 350 g.",
     "price": null,
     "available": null
   },
@@ -441,7 +441,7 @@
     "id": "p37",
     "category": "paste",
     "name": "Paste cu pui și ciuperci",
-    "description": "Paste 225g , gran cucina 50 g, piept de pui 50g, ciuperci 70g, busuioc, ulei masline, nucsoara 5g, usturoi , sare si piper, total 360g",
+    "description": "Ingrediente: paste 225 g, Gran Cucina 50 g, piept de pui 50 g, ciuperci 70 g, busuioc, ulei de măsline, nucșoară 5 g, usturoi, sare și piper. Total: 360 g.",
     "price": null,
     "available": null
   },
@@ -449,39 +449,39 @@
     "id": "p38",
     "category": "paste",
     "name": "Paste quattro formaggi",
-    "description": "Paste 225g, gran cucina 50g, gorgonzola 50g, parmezan 20g, emmentaller 20g, ulei de masline, sare si piper, total 350 g",
+    "description": "Ingrediente: paste 225 g, Gran Cucina 50 g, gorgonzola 50 g, parmezan 20 g, emmentaler 20 g, ulei de măsline, sare și piper. Total: 350 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p39",
     "category": "salate",
-    "name": "Salata bulgareasca",
-    "description": "Salata verde 100g, rosii 50g, castraveti 50g, masline 50g, branza feta 50g, ou fiert 30g, dressing 20g, sare si piper, ulei masline, total 350g",
+    "name": "Salată bulgărească",
+    "description": "Ingrediente: salată verde 100 g, roșii 50 g, castraveți 50 g, măsline 50 g, brânză feta 50 g, ou fiert 30 g, dressing 20 g, sare și piper, ulei de măsline. Total: 350 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p40",
     "category": "salate",
-    "name": "Salata ton",
-    "description": "Salata verde 100g, ton 70g, masline 50g, porumb 50g, ardei capia 50g, lamaie 30g, sare, piper , ulei masline, total 350g",
+    "name": "Salată cu ton",
+    "description": "Ingrediente: salată verde 100 g, ton 70 g, măsline 50 g, porumb 50 g, ardei capia 50 g, lămâie 30 g, sare, piper, ulei de măsline. Total: 350 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p41",
     "category": "salate",
-    "name": "Salata caesar",
-    "description": "Salata verde 100g, piept de pui 100g, crutoane 50g, ou fiert 30g, dressing 20g, scalie parmezan 20g, total 320g",
+    "name": "Salată Caesar",
+    "description": "Ingrediente: salată verde 100 g, piept de pui 100 g, crutoane 50 g, ou fiert 30 g, dressing 20 g, fulgi de parmezan 20 g. Total: 320 g.",
     "price": null,
     "available": null
   },
   {
     "id": "p42",
     "category": "salate",
-    "name": "Salata de vara",
-    "description": "rosii 100g, castraveti 100g, ceapa rosie 20g, masline, 50g, sare si piper, ulei masline, total 270g",
+    "name": "Salată de vară",
+    "description": "Ingrediente: roșii 100 g, castraveți 100 g, ceapă roșie 20 g, măsline 50 g, sare și piper, ulei de măsline. Total: 270 g.",
     "price": null,
     "available": null
   },
@@ -515,7 +515,7 @@
   {
     "id": "p43",
     "category": "deserturi",
-    "name": "Baclava ciocolata",
+    "name": "Baclavă cu ciocolată",
     "description": "",
     "price": null,
     "available": null
@@ -523,7 +523,7 @@
   {
     "id": "p44",
     "category": "deserturi",
-    "name": "Baclava clasica",
+    "name": "Baclavă clasică",
     "description": "",
     "price": null,
     "available": null
@@ -531,7 +531,7 @@
   {
     "id": "p45",
     "category": "deserturi",
-    "name": "Baclava cirese",
+    "name": "Baclavă cu cireșe",
     "description": "",
     "price": null,
     "available": null
@@ -547,7 +547,7 @@
   {
     "id": "p47",
     "category": "deserturi",
-    "name": "Cheese Cake",
+    "name": "Cheesecake",
     "description": "",
     "price": null,
     "available": null
@@ -563,7 +563,7 @@
   {
     "id": "p49",
     "category": "bauturi",
-    "name": "Coca-cola",
+    "name": "Coca-Cola",
     "description": "",
     "price": null,
     "available": null
@@ -587,7 +587,7 @@
   {
     "id": "p52",
     "category": "bauturi",
-    "name": "Schweppes mandarine",
+    "name": "Schweppes Mandarine",
     "description": "",
     "price": null,
     "available": null
@@ -595,7 +595,7 @@
   {
     "id": "p53",
     "category": "bauturi",
-    "name": "Schweppes bitter lemon",
+    "name": "Schweppes Bitter Lemon",
     "description": "",
     "price": null,
     "available": null
@@ -603,7 +603,7 @@
   {
     "id": "p54",
     "category": "bauturi",
-    "name": "Apa plata",
+    "name": "Apă plată",
     "description": "",
     "price": null,
     "available": null
@@ -611,7 +611,7 @@
   {
     "id": "p55",
     "category": "bauturi",
-    "name": "Apa minerala",
+    "name": "Apă minerală",
     "description": "",
     "price": null,
     "available": null

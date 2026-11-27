@@ -43,3 +43,7 @@ Banda de categorii dintre hero și meniu se derulează continuu; se oprește câ
 Pe mobil, apelul și WhatsApp sunt unul lângă altul la baza ecranului, iar coșul este centrat deasupra lor. Desktopul păstrează grupul vertical.
 
 Denumirea „Paste cu pui și ciuperci” este corectată în generator și în catalogul public.
+
+## Revizie editorială meniu
+
+`menu_editorial.py` conține corecturile ortografice pentru toate cele 55 de produse din documente. Generatorul aplică aceste corecturi înainte de a crea cele 15 variante pizza de 50 cm. Cele trei supe rămân conform rețetelor furnizate ulterior. Cantitățile și totalurile din documentele originale nu au fost recalculate; la Pizza Quattro Stagioni documentul notează „ciuperci 20” fără unitate, afișată ca „cantitate de confirmat”.
