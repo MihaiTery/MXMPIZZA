@@ -206,13 +206,19 @@
               "name": "features.items",
               "status": "authored",
               "value": "73 de poziții în menu.json: 55 din documente, 15 variante pizza 50 cm propuse și 3 supe cremă cu rețete furnizate de client."
+            },
+            {
+              "name": "menu.copyCorrection",
+              "status": "authored",
+              "value": "Paste cu pui și ciuperci"
             }
           ],
           "authoredSlots": [
             "section.title",
             "section.body",
             "section.heading",
-            "features.items"
+            "features.items",
+            "menu.copyCorrection"
           ],
           "missing": [
             {

@@ -41,3 +41,5 @@ Butonul alb „Sună” este fix în dreapta jos, deasupra coșului și a widget
 Banda de categorii dintre hero și meniu se derulează continuu; se oprește când nu este vizibilă, când fila este ascunsă, la hover și pentru utilizatorii care preferă mișcare redusă.
 
 Pe mobil, apelul și WhatsApp sunt unul lângă altul la baza ecranului, iar coșul este centrat deasupra lor. Desktopul păstrează grupul vertical.
+
+Denumirea „Paste cu pui și ciuperci” este corectată în generator și în catalogul public.

@@ -17,7 +17,7 @@ document.querySelector('#cartButton').addEventListener('click',()=>document.quer
 document.querySelector('#accountButton').addEventListener('click',()=>document.querySelector('#accountDialog').showModal());
 document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.close).close()));
 document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d)d.close()}));
-fetch('menu.json?v=soups-3').then(r=>r.json()).then(items=>{state.items=items;renderFilters();renderMenu();renderCart()}).catch(()=>{grid.innerHTML='<p class="empty-results">Meniul nu s-a putut încărca. Reîncarcă pagina.</p>'});
+fetch('menu.json?v=ciuperci-1').then(r=>r.json()).then(items=>{state.items=items;renderFilters();renderMenu();renderCart()}).catch(()=>{grid.innerHTML='<p class="empty-results">Meniul nu s-a putut încărca. Reîncarcă pagina.</p>'});
 
 // Pointer motion stays on the decorative pizza; text and controls remain still.
 (()=>{

@@ -19,7 +19,7 @@ for category,name in files:
    if line.lower().strip()=='meniu pizza':continue
    line=re.sub(r'^\s*\d+\.\s*','',line)
    parts=re.split(r'\s*[.(]\s*',line,1)
-   title=parts[0].strip().rstrip('. ')
+   title=parts[0].strip().rstrip('. ').replace('Paste cu pui si ciuoerci','Paste cu pui și ciuperci').replace('ciuoerci','ciuperci')
    detail=parts[1].strip(' )') if len(parts)>1 else ''
   if title:
    detail=re.sub(r'\s+',' ',detail).replace('ciuoerci','ciuperci').replace('uesturoi','usturoi').replace('ketchp','ketchup')
