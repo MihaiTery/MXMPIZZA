@@ -35,3 +35,13 @@ fetch('menu.json').then(r=>r.json()).then(items=>{state.items=items;renderFilter
  document.addEventListener('visibilitychange',()=>{visible=!document.hidden&&hero.getBoundingClientRect().bottom>0&&hero.getBoundingClientRect().top<innerHeight;hero.dataset.artActive=String(visible);if(!visible)reset()});
  reduced.addEventListener('change',()=>{if(reduced.matches)reset()});
 })();
+
+// WhatsApp preview: local draft only; no number, network request, or send action.
+(()=>{
+ const button=document.querySelector('#whatsappButton');
+ const dialog=document.querySelector('#whatsappDialog');
+ const draft=document.querySelector('#waDraft');
+ if(!button||!dialog||!draft)return;
+ button.addEventListener('click',()=>dialog.showModal());
+ dialog.querySelectorAll('[data-wa-message]').forEach(choice=>choice.addEventListener('click',()=>{draft.value=choice.dataset.waMessage;draft.focus()}));
+})();

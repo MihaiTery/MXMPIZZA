@@ -23,3 +23,7 @@ URL public: https://mihaitery.github.io/MXMPIZZA/
 ## Hero animat
 
 Logo-ul original este afișat în primul ecran. Pizza este desenată în CSS și reacționează la cursor pe dispozitive cu pointer fin; levitația și aura se opresc în afara ecranului și când fila este ascunsă. `prefers-reduced-motion` păstrează compoziția statică. Direcția rămâne în așteptarea verificării ownerului.
+
+## Logo și WhatsApp
+
+`assets/logo-transparent.webp` este decupajul logo-ului furnizat, folosit în dreapta sus și în footer. `assets/logo.jpeg` păstrează originalul. Widgetul WhatsApp este un mock: sugestiile completează doar mesajul local, nu există număr, link `wa.me` sau trimitere. Verificarea vizuală și funcțională rămâne pending pentru owner.
