@@ -408,12 +408,15 @@
         "description": "Catalogul MXM PIZZA; comenzile online sunt în pregătire."
       }
     ],
-    "crawlPlan": "noindex până la confirmarea domeniului, adreselor, prețurilor și comenzilor; fără canonical inventat.",
+    "crawlPlan": "noindex pentru preview public; canonical către URL-ul GitHub Pages. Elimină noindex numai după confirmarea datelor comerciale și lansarea comenzilor.",
     "structuredDataPlan": "Fără JSON-LD cu date comerciale neconfirmate.",
     "socialImage": {
-      "status": "pending-domain",
-      "source": "assets/share.svg",
-      "note": "Imagine creată local; og:image absolut se adaugă la publicare."
+      "status": "authored",
+      "source": "assets/share.png",
+      "url": "https://mihaitery.github.io/MXMPIZZA/assets/share.png",
+      "width": 1200,
+      "height": 630,
+      "alt": "MXM PIZZA — Noaptea are gust, alături de o pizza ilustrată"
     },
     "verification": {
       "status": "pending",

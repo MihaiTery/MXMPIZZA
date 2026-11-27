@@ -8,7 +8,7 @@ Site static în limba română pentru meniul MXM PIZZA. Deschide-l printr-un ser
 - `price: null` și `available: null` înseamnă informații neconfirmate. Nu publica prețuri sau stocuri fără datele clientului.
 - Coșul folosește `localStorage` doar pentru demonstrație. Contul este o interfață fără autentificare. Butonul de finalizare este dezactivat. Integrarea cu platforma de comenzi trebuie să furnizeze prețuri, disponibilitate, autentificare și plasarea reală a comenzilor.
 - Adresa și telefonul sunt afișate ca informații în curs de confirmare. Nu există date de contact fictive publicate.
-- `assets/logo.jpeg` este logo-ul furnizat de client. `assets/share.svg` este o compoziție originală pentru viitorul preview social; adaugă un URL HTTPS absolut în metadate după stabilirea domeniului.
+- `assets/logo.jpeg` este logo-ul furnizat de client. `assets/share.svg` este o compoziție originală pentru viitorul preview social; `assets/share.png` este preview-ul social folosit la URL-ul public.
 
 ## Handoff BrandForge
 
@@ -17,3 +17,5 @@ Site static în limba română pentru meniul MXM PIZZA. Deschide-l printr-un ser
 ## Publicare GitHub Pages
 
 Workflow-ul `.github/workflows/pages.yml` publică ramura `main` prin GitHub Actions. În repo, configurează Settings → Pages → Build and deployment → Source: GitHub Actions. Pagina rămâne `noindex` și marcată preview până la confirmarea datelor comerciale.
+
+URL public: https://mihaitery.github.io/MXMPIZZA/
