@@ -27,3 +27,5 @@ Logo-ul original este afișat în primul ecran. Pizza este desenată în CSS și
 ## Logo și WhatsApp
 
 `assets/logo-transparent.webp` este decupajul logo-ului furnizat, folosit în dreapta sus și în footer. `assets/logo.jpeg` păstrează originalul. Widgetul WhatsApp este un mock: sugestiile completează doar mesajul local, nu există număr, link `wa.me` sau trimitere. Verificarea vizuală și funcțională rămâne pending pentru owner.
+
+Butonul coșului este fix în viewport pe mobil și desktop, deasupra widgetului WhatsApp; rămâne demonstrativ, fără checkout real.
