@@ -1,0 +1,442 @@
+[
+  {
+    "id": "p01",
+    "category": "pizza",
+    "name": "Pizza margherita",
+    "description": "aluat 320g , mozzarella 150g,sos pizza 50g, busuioc 20 g, ulei masline ,total 500 g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p02",
+    "category": "pizza",
+    "name": "Pizza prosciutto cotto",
+    "description": "aluat 320g , mozzarella 100g sos pizza 50 g , sunca 100g, busuioc , ulei masline total 550g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p03",
+    "category": "pizza",
+    "name": "Pizza prosciutto funghi",
+    "description": "aluat320g, mozzarella 100g sos pizza 50 g, sunca 100g, ciuperci 50g , busuioc , ulei masline total 580g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p04",
+    "category": "pizza",
+    "name": "Pizza quattro stagioni",
+    "description": "aluat320g, mozzarella 100g, sos pizza 50g,salam 50g, sunca 50g, ciuperci 20, masline 15g , busuioc,ulei masline, total 680g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p05",
+    "category": "pizza",
+    "name": "Pizza capriciosa",
+    "description": "aluat320g, mozzarella 100g, sos pizza 50g, sunca 50g, ciuperci 50g, masline 30g, ardei capia 30g, busuioc,ulei masline, total 630 g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p06",
+    "category": "pizza",
+    "name": "Pizza salami",
+    "description": "aluat320g, mozzarella 100g, sos pizza 50g salam napoli 100g, busuioc, ulei masline total 550g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p07",
+    "category": "pizza",
+    "name": "Pizza diavola",
+    "description": "aluat320g, mozzarella 100g, sos pizza 50g, salam picant ventricina 100g, jalapeno 50g,busuioc,ulei masline total 630g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p08",
+    "category": "pizza",
+    "name": "Pizza quattro formaggi",
+    "description": "aluat320g, mozzarella 150g, gorgonzola 50g, parmezan 30g, emmentaller 50g,busuioc,ulei masline, total 600g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p09",
+    "category": "pizza",
+    "name": "Pizza hot cheese",
+    "description": "aluat320g, mozzarella 150g, gorgonzola 50g, parmezan 30g, jalapeno 30g, busuioc,ulei masline, total 580g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p10",
+    "category": "pizza",
+    "name": "Pizza carnivora",
+    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, sunca 50g, salam napoli 50g, bacon 50g, carnati 50g, busuioc , ulei masline total 680g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p11",
+    "category": "pizza",
+    "name": "Pizza tonno e cipolla",
+    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, ton 70g, ceapa rosie 50g, masline 50g, busuioc, ulei masline total 630g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p12",
+    "category": "pizza",
+    "name": "Pizza mikys",
+    "description": "aluat320g, mozzarella 100g, sos pizza50g, carnati 50g, bacon 70g, porumb 20g, ceapa rosie 20g, ardei capia 20g, busuioc,ulei masline total 650g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p13",
+    "category": "pizza",
+    "name": "Pizza carbonara",
+    "description": "aluat320g, mozzarella 100g, sos alb 50g, bacon 100g, ou 30g, parmezan 20g, busuioc, ulei malsine total 620g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p14",
+    "category": "pizza",
+    "name": "Pizza pollo",
+    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, piept pui 100g, porumb 20g, masline 50g, busuioc, ulei masline total 630g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p15",
+    "category": "pizza",
+    "name": "Pizza vegetariana",
+    "description": "aluat 320g, mozzarella 100g, sos pizza 50g, ciuperci 50g, masline 50g, ceapa rosie 20g, ardei capia 20g, porumb 20g, busuioc , ulei masline total 630g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p16",
+    "category": "shaorma",
+    "name": "Shaorma pui mica",
+    "description": "piept pui 200g, lipie 50g, cartofi 50g, salate 50g, sos maioneza cu usturoi 50g, ketchup 50g, total 500g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p17",
+    "category": "shaorma",
+    "name": "Shaorma pui mare",
+    "description": "piept pui 340g, lipie 70g, cartofi 100g, salate 160g, sos maioneza cu usturoi 75g, ketchup 75g, total 750g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p18",
+    "category": "shaorma",
+    "name": "Shaorma vita-berbecut mica",
+    "description": "vita-berbecut 200g, lipie 50g, cartofi 50g, salate 50g, ketchup 50g, sos maioneza cu usturoi 50g, total 500g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p19",
+    "category": "shaorma",
+    "name": "Shaorma vita-berbecut mare",
+    "description": "Vita-berbecut 340g, lipie 70g, cartofi 100g,salate 150g, ketchup 75g, sos maioneza cu usturoi 75g, total 750g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p20",
+    "category": "shaorma",
+    "name": "Shaorma mixta mica",
+    "description": "Pui,vita-berbecut 200g, lipie 50g, cartofi 50g, salate 50g, ketchup 50g, sos maioneza cu usturoi 50g, total 500g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p21",
+    "category": "shaorma",
+    "name": "Shaorma mixta mare",
+    "description": "Pui,vita-berbecut 340g, lipie 70g, cartofi 100g, salate 150g, ketchup 75g, sos maioneza cu usturoi 75g, total 750g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p22",
+    "category": "shaorma",
+    "name": "Kebab pui",
+    "description": "Chifla 120g, piept pui 100g, cartofi 50g, salate 50g, ketchup 50g, maioneza cu usturoi 50g, total 400g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p23",
+    "category": "shaorma",
+    "name": "Kebab vita-berbecut",
+    "description": "Chifla 120g, vita-berbecut 100g, cartofi 50g, salate 50g, ketchup 50g, maioneza cu usturoi 50g, total 400g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p24",
+    "category": "shaorma",
+    "name": "Kebab mixt",
+    "description": "Chifla 120g, pui-vita-berbecut 100g, cartofi 50g, salate 50g, ketchup 50g, maioneza cu usturoi 50g, total 400g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p25",
+    "category": "shaorma",
+    "name": "Shaorma cheese pui",
+    "description": "pui 200g, lipie 50g, cartofi 50g, salate 50g, cheddar 50g, ketchup 50g, maioneza cu usturoi 50g, total 550g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p26",
+    "category": "shaorma",
+    "name": "Shaorma cheese vita-berbecut",
+    "description": "Vita-berbecut 340g, lipie 70g, cartofi 100g, salate 100g, cheddar 70g, ketchup 75g, maioneza cu usturoi 75g, total 800g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p27",
+    "category": "meniu",
+    "name": "Meniu crispy",
+    "description": "Crispy 200g, cartofi prajiti 150g, sos usturoi 50g, ketchup 50g, salate 100g, chifla 50g, total 450g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p28",
+    "category": "meniu",
+    "name": "Meniu aripioare",
+    "description": "Aripioare pui 250g, cartofi prajiti 100g, salate 100g, sos usturoi 50 g, ketchup 50g, chifla 50g, total 500g,",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p29",
+    "category": "meniu",
+    "name": "Meniu aripioare picante",
+    "description": "Aripioare picante 250g, cartofi prajiti 100g, salate 100g, sos anatolya 50g, total 500g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p30",
+    "category": "meniu",
+    "name": "Meniu nuggets",
+    "description": "nuggets pui 200g, cartofi prajiti 100g, sos maioneza 50g, total 350g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p31",
+    "category": "meniu",
+    "name": "Schnitzel gratinat diavola",
+    "description": "Schnitzel pui 200g, ventricina 50g, mozzarella 50g, jalapeno 20g, total 320g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p32",
+    "category": "meniu",
+    "name": "Schnitzel gratinat carbonara",
+    "description": "schnitzel pui 200g , gran cucina 50g, guanciale 50g, parmezan 20g, total 320g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p33",
+    "category": "meniu",
+    "name": "Schnitzel gratinat quattro formaggi",
+    "description": "schnitzel pui 200g, mozzarella 50g, gorgonzola 50g,emmentaller 20g, parmezan 20g, total 340g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p34",
+    "category": "paste",
+    "name": "Paste arabiata",
+    "description": "paste 225 g , sos rosii 50g, ardei iute 20g, ulei masline , busuioc, sare, piper, total 300g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p35",
+    "category": "paste",
+    "name": "Paste amatriciana",
+    "description": "Paste 225 g , sos rosii 50g, guanciale 50g, busuioc, ulei de masline , sare , piper, total 320g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p36",
+    "category": "paste",
+    "name": "Paste carbonara",
+    "description": "paste 225g, ou 30g, parmezan 30g,guanciale 50g, ulei masline , sare, piper, total 350g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p37",
+    "category": "paste",
+    "name": "Paste cu pui si ciuoerci",
+    "description": "Paste 225g , gran cucina 50 g, piept de pui 50g, ciuperci 70g, busuioc, ulei masline, nucsoara 5g, usturoi , sare si piper, total 360g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p38",
+    "category": "paste",
+    "name": "Paste quattro formaggi",
+    "description": "Paste 225g, gran cucina 50g, gorgonzola 50g, parmezan 20g, emmentaller 20g, ulei de masline, sare si piper, total 350 g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p39",
+    "category": "salate",
+    "name": "Salata bulgareasca",
+    "description": "Salata verde 100g, rosii 50g, castraveti 50g, masline 50g, branza feta 50g, ou fiert 30g, dressing 20g, sare si piper, ulei masline, total 350g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p40",
+    "category": "salate",
+    "name": "Salata ton",
+    "description": "Salata verde 100g, ton 70g, masline 50g, porumb 50g, ardei capia 50g, lamaie 30g, sare, piper , ulei masline, total 350g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p41",
+    "category": "salate",
+    "name": "Salata caesar",
+    "description": "Salata verde 100g, piept de pui 100g, crutoane 50g, ou fiert 30g, dressing 20g, scalie parmezan 20g, total 320g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p42",
+    "category": "salate",
+    "name": "Salata de vara",
+    "description": "rosii 100g, castraveti 100g, ceapa rosie 20g, masline, 50g, sare si piper, ulei masline, total 270g",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p43",
+    "category": "deserturi",
+    "name": "Baclava ciocolata",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p44",
+    "category": "deserturi",
+    "name": "Baclava clasica",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p45",
+    "category": "deserturi",
+    "name": "Baclava cirese",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p46",
+    "category": "deserturi",
+    "name": "Lava Cake",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p47",
+    "category": "deserturi",
+    "name": "Cheese Cake",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p48",
+    "category": "deserturi",
+    "name": "Tiramisu",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p49",
+    "category": "bauturi",
+    "name": "Coca-cola",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p50",
+    "category": "bauturi",
+    "name": "Fanta",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p51",
+    "category": "bauturi",
+    "name": "Sprite",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p52",
+    "category": "bauturi",
+    "name": "Schweppes mandarine",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p53",
+    "category": "bauturi",
+    "name": "Schweppes bitter lemon",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p54",
+    "category": "bauturi",
+    "name": "Apa plata",
+    "description": "",
+    "price": null,
+    "available": null
+  },
+  {
+    "id": "p55",
+    "category": "bauturi",
+    "name": "Apa minerala",
+    "description": "",
+    "price": null,
+    "available": null
+  }
+]

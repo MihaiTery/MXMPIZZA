@@ -1,0 +1,365 @@
+{
+  "version": "1.0.0",
+  "status": "implemented-unverified",
+  "siteId": "mxm-pizza",
+  "schemaVersion": "1.3.0",
+  "pages": [
+    {
+      "path": "/",
+      "missingPageContent": [
+        "page title",
+        "meta description"
+      ],
+      "sections": [
+        {
+          "id": "hero",
+          "role": "hero",
+          "componentId": "component.hero.editorial-split.v1",
+          "componentStatus": "implemented-unverified",
+          "variantId": "media-start",
+          "compositionId": "composition.asymmetric-editorial.v1",
+          "compositionStatus": "selected",
+          "compositionVersion": null,
+          "compositionParams": {
+            "mediaShare": 0.472,
+            "mediaSide": "start"
+          },
+          "componentParams": {},
+          "responsive": "Text precedes media in DOM; one column at narrow widths.",
+          "componentFallback": "Text and CTA remain legible without media or effects.",
+          "slots": [
+            {
+              "name": "hero.eyebrow",
+              "status": "authored",
+              "value": "MXM PIZZA · NON STOP"
+            },
+            {
+              "name": "hero.title",
+              "status": "authored",
+              "value": "NOAPTEA ARE GUST."
+            },
+            {
+              "name": "hero.body",
+              "status": "authored",
+              "value": "Pizza, shaorma și tot ce îți place, într-un meniu făcut pentru orice oră."
+            },
+            {
+              "name": "hero.media",
+              "status": "authored",
+              "value": "Ilustrație originală pizza în CSS"
+            },
+            {
+              "name": "button.primary",
+              "status": "authored",
+              "value": "Explorează meniul"
+            }
+          ],
+          "authoredSlots": [
+            "hero.eyebrow",
+            "hero.title",
+            "hero.body",
+            "hero.media",
+            "button.primary"
+          ],
+          "missing": [
+            {
+              "slot": "button.primary",
+              "label": "primary action"
+            },
+            {
+              "slot": "hero.media",
+              "label": "hero media"
+            }
+          ],
+          "tokens": "manifest.designTokens / brand-signature.css",
+          "effects": [
+            {
+              "page": "/",
+              "sectionId": "hero",
+              "componentId": "component.hero.editorial-split.v1",
+              "target": "hero.media",
+              "requestedEffectId": "effect.none.v1",
+              "appliedEffectId": "effect.none.v1",
+              "status": "none",
+              "selectionSource": "rail",
+              "attempts": [],
+              "availableFallbackEffectId": null,
+              "reason": "No compatible reusable effect; content remains in its static state."
+            }
+          ],
+          "unmountedEffectTargets": [],
+          "integration": {
+            "stylesheet": "rail-components.css",
+            "rootAttribute": "data-rail-section=\"hero\"",
+            "slotAttribute": "data-rail-slot",
+            "component": "component.hero.editorial-split.v1",
+            "framework": "Adapt this semantic markup in the existing stack; do not replace established components."
+          },
+          "notes": []
+        },
+        {
+          "id": "menu",
+          "role": "catalog",
+          "componentId": "component.section.features-grid.v1",
+          "componentStatus": "implemented-unverified",
+          "variantId": "balanced",
+          "compositionId": null,
+          "compositionStatus": "selected",
+          "compositionVersion": null,
+          "compositionParams": {
+            "columns": 3.272
+          },
+          "componentParams": {},
+          "responsive": "Cards stack in source order at narrow widths.",
+          "componentFallback": "Plain article list remains semantic.",
+          "slots": [
+            {
+              "name": "section.title",
+              "status": "authored",
+              "value": "Tot meniul. Fără pauză."
+            },
+            {
+              "name": "section.body",
+              "status": "authored",
+              "value": "55 de produse din documentele clientului, cu căutare și filtre."
+            }
+          ],
+          "authoredSlots": [
+            "section.title",
+            "section.body"
+          ],
+          "missing": [
+            {
+              "slot": "features.items",
+              "label": "feature items"
+            },
+            {
+              "slot": "section.heading",
+              "label": "section.heading"
+            }
+          ],
+          "tokens": "manifest.designTokens / brand-signature.css",
+          "effects": [],
+          "unmountedEffectTargets": [],
+          "integration": {
+            "stylesheet": "rail-components.css",
+            "rootAttribute": "data-rail-section=\"menu\"",
+            "slotAttribute": "data-rail-slot",
+            "component": "component.section.features-grid.v1",
+            "framework": "Adapt this semantic markup in the existing stack; do not replace established components."
+          },
+          "notes": []
+        },
+        {
+          "id": "night",
+          "role": "brand-pause",
+          "componentId": "component.section.story.v1",
+          "componentStatus": "implemented-unverified",
+          "variantId": "story",
+          "compositionId": null,
+          "compositionStatus": "selected",
+          "compositionVersion": null,
+          "compositionParams": {
+            "mediaShare": 0.497,
+            "mediaSide": "end"
+          },
+          "componentParams": {},
+          "responsive": "Reading order is heading, body, action, then media.",
+          "componentFallback": "Text and real link remain without image.",
+          "slots": [
+            {
+              "name": "section.title",
+              "status": "authored",
+              "value": "Pofta nu se uită la ceas."
+            }
+          ],
+          "authoredSlots": [
+            "section.title"
+          ],
+          "missing": [
+            {
+              "slot": "section.heading",
+              "label": "section.heading"
+            }
+          ],
+          "tokens": "manifest.designTokens / brand-signature.css",
+          "effects": [],
+          "unmountedEffectTargets": [],
+          "integration": {
+            "stylesheet": "rail-components.css",
+            "rootAttribute": "data-rail-section=\"night\"",
+            "slotAttribute": "data-rail-slot",
+            "component": "component.section.story.v1",
+            "framework": "Adapt this semantic markup in the existing stack; do not replace established components."
+          },
+          "notes": []
+        },
+        {
+          "id": "ordering",
+          "role": "ordering-status",
+          "componentId": "component.section.story.v1",
+          "componentStatus": "implemented-unverified",
+          "variantId": "conversion",
+          "compositionId": null,
+          "compositionStatus": "selected",
+          "compositionVersion": null,
+          "compositionParams": {
+            "maxMeasureCh": 45.805
+          },
+          "componentParams": {},
+          "responsive": "Reading order is heading, body, action, then media.",
+          "componentFallback": "Text and real link remain without image.",
+          "slots": [
+            {
+              "name": "section.title",
+              "status": "authored",
+              "value": "Un click mai aproape de poftă."
+            },
+            {
+              "name": "section.body",
+              "status": "authored",
+              "value": "Coș și cont demonstrative; platformă separată în pregătire."
+            }
+          ],
+          "authoredSlots": [
+            "section.title",
+            "section.body"
+          ],
+          "missing": [
+            {
+              "slot": "section.heading",
+              "label": "section.heading"
+            }
+          ],
+          "tokens": "manifest.designTokens / brand-signature.css",
+          "effects": [],
+          "unmountedEffectTargets": [],
+          "integration": {
+            "stylesheet": "rail-components.css",
+            "rootAttribute": "data-rail-section=\"ordering\"",
+            "slotAttribute": "data-rail-slot",
+            "component": "component.section.story.v1",
+            "framework": "Adapt this semantic markup in the existing stack; do not replace established components."
+          },
+          "notes": []
+        },
+        {
+          "id": "footer",
+          "role": "footer",
+          "componentId": "component.footer.standard.v1",
+          "componentStatus": "implemented-unverified",
+          "variantId": "columns",
+          "compositionId": null,
+          "compositionStatus": "no-compatible-composition",
+          "compositionVersion": null,
+          "compositionParams": {},
+          "componentParams": {},
+          "responsive": "Links wrap and remain usable on narrow screens.",
+          "componentFallback": "Brand identity remains visible without links.",
+          "slots": [
+            {
+              "name": "footer.brand",
+              "status": "authored",
+              "value": "Logo original MXM Food Miky’s Pizza"
+            },
+            {
+              "name": "footer.contact",
+              "status": "authored",
+              "value": "Adresă și telefon în curs de confirmare."
+            }
+          ],
+          "authoredSlots": [
+            "footer.brand",
+            "footer.contact"
+          ],
+          "missing": [],
+          "tokens": "manifest.designTokens / brand-signature.css",
+          "effects": [],
+          "unmountedEffectTargets": [],
+          "integration": {
+            "stylesheet": "rail-components.css",
+            "rootAttribute": "data-rail-section=\"footer\"",
+            "slotAttribute": "data-rail-slot",
+            "component": "component.footer.standard.v1",
+            "framework": "Adapt this semantic markup in the existing stack; do not replace established components."
+          },
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "selectedComponents": [
+    "component.hero.editorial-split.v1",
+    "component.section.features-grid.v1",
+    "component.section.story.v1",
+    "component.footer.standard.v1"
+  ],
+  "selectedCompositions": [
+    "composition.asymmetric-editorial.v1"
+  ],
+  "designTokens": {
+    "color": {
+      "background": "#10100f",
+      "surface": "#1a1a17",
+      "text": "#f3f0e7",
+      "accent": "#ef432e",
+      "onAccent": "#ffffff",
+      "darkSurface": "#10100f",
+      "accentLight": "#ffc970"
+    },
+    "typography": {
+      "baseSizePx": 17,
+      "mobileBaseSizePx": 16,
+      "minimumFunctionalTextPx": 16,
+      "minimumSupportingTextPx": 14,
+      "bodyLineHeight": 1.65,
+      "maximumMeasureCh": 70,
+      "allowSub14PxDecorativeOnly": true,
+      "headingFamily": "Barlow Condensed",
+      "bodyFamily": "DM Sans",
+      "headingScale": "dramatic",
+      "headingScaleFactor": 1.0462
+    },
+    "geometry": {
+      "radiusPx": 16,
+      "borderStyle": "subtle"
+    },
+    "spacing": {
+      "density": "spacious",
+      "sectionRhythm": "varied",
+      "scalePx": [
+        4.362,
+        8.725,
+        17.45,
+        26.174,
+        43.624,
+        69.798
+      ]
+    },
+    "grid": {
+      "mobileColumns": 4,
+      "tabletColumns": 8,
+      "desktopColumns": 12,
+      "maxWidthPx": 1280,
+      "gutter": "clamp(16px, 3vw, 40px)"
+    },
+    "motion": {
+      "character": "deliberate, slow",
+      "intensity": 0.3
+    }
+  },
+  "effectAssets": [
+    "rail-effects.css",
+    "rail-effects.mjs",
+    "rail-effects-init.mjs",
+    "brand-signature.css"
+  ],
+  "pendingEffects": [],
+  "integration": {
+    "pageAttribute": null,
+    "componentCss": "rail-components.css",
+    "effects": "rail-effects-init.mjs",
+    "content": "Explicit placeholders represent missing authored content; this is not a finished website.",
+    "review": "Human visual and functional review pending."
+  }
+}

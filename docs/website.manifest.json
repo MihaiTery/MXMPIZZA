@@ -1,0 +1,784 @@
+{
+  "schemaVersion": "1.3.0",
+  "heroPolicyVersion": "1.0.0",
+  "motionPolicyVersion": "1.1.0",
+  "performancePolicyVersion": "1.0.0",
+  "seoSocialPolicyVersion": "1.0.0",
+  "siteId": "mxm-pizza",
+  "projectCategory": "production",
+  "generationSeed": 1,
+  "designDecision": {
+    "version": "1.0.0",
+    "seed": 1,
+    "selectedStyle": {
+      "id": "style.architectural-editorial.v1",
+      "version": "1.1.0",
+      "reason": "Brand and industry match score 0"
+    },
+    "composition": "asymmetric",
+    "heroComponentId": "component.hero.editorial-split.v1",
+    "contentComponentId": "component.section.story.v1",
+    "heroRecipe": {
+      "id": "hero.recipe.quiet-editorial-field.v1",
+      "version": "1.0.0",
+      "source": "knowledge/hero-recipes.json",
+      "status": "candidate",
+      "name": "A restrained editorial portfolio builds a long visual rhythm",
+      "styleCompatible": true,
+      "family": "editorial-gallery",
+      "siteCoverage": "full-site",
+      "score": 6,
+      "historySources": [],
+      "reason": "Compatible with style.architectural-editorial.v1; No direct industry match; No matching history penalty; Candidate requires brand adaptation"
+    },
+    "heroRecipeCandidates": [
+      {
+        "id": "hero.recipe.quiet-editorial-field.v1",
+        "version": "1.0.0",
+        "source": "knowledge/hero-recipes.json",
+        "status": "candidate",
+        "name": "A restrained editorial portfolio builds a long visual rhythm",
+        "styleCompatible": true,
+        "family": "editorial-gallery",
+        "siteCoverage": "full-site",
+        "score": 6,
+        "historySources": [],
+        "reason": "Compatible with style.architectural-editorial.v1; No direct industry match; No matching history penalty; Candidate requires brand adaptation"
+      },
+      {
+        "id": "hero.recipe.type-specimen.v1",
+        "version": "1.0.0",
+        "source": "knowledge/hero-recipes.json",
+        "status": "candidate",
+        "name": "Typography as the hero object",
+        "styleCompatible": true,
+        "family": "type-led",
+        "siteCoverage": "hero-only",
+        "score": 6,
+        "historySources": [],
+        "reason": "Compatible with style.architectural-editorial.v1; No direct industry match; No matching history penalty; Candidate requires brand adaptation"
+      },
+      {
+        "id": "hero.recipe.editorial-trust-parallax.v1",
+        "version": "1.0.0",
+        "source": "knowledge/hero-recipes.json",
+        "status": "candidate",
+        "name": "A photographic hero sets up a proof-led editorial page",
+        "styleCompatible": true,
+        "family": "editorial-parallax",
+        "siteCoverage": "full-site",
+        "score": 3,
+        "historySources": [
+          "Products/Starfit2/rail/website.manifest.json"
+        ],
+        "reason": "Compatible with style.architectural-editorial.v1; No direct industry match; Weighted history and structural diversity penalty 3.00; Candidate requires brand adaptation"
+      }
+    ],
+    "heroBindings": [
+      {
+        "target": "hero.media",
+        "effectId": "effect.scroll.parallax.v1",
+        "params": {
+          "strength": 0.2,
+          "maxTranslationPx": 12,
+          "pointerScope": "viewport"
+        },
+        "selectionSource": "rail"
+      }
+    ],
+    "immersive": {
+      "decision": "not-selected",
+      "techniqueId": null,
+      "renderer": null
+    },
+    "brandSignature": {
+      "version": "1.1.0",
+      "source": "brand.signature.v1",
+      "styleId": "style.architectural-editorial.v1",
+      "recipeId": "hero.recipe.quiet-editorial-field.v1",
+      "compositionFamily": "asymmetric",
+      "mechanismFamily": "editorial-gallery",
+      "typography": "Barlow Condensed / DM Sans",
+      "rhythm": "Hero nocturn, catalog cald, pauză întunecată, explicație clară pentru comenzi.",
+      "material": "architecture photography, negative space, exquisite crop",
+      "variation": {
+        "accentHueShiftDegrees": 8.5389,
+        "typeScaleFactor": 1.0462,
+        "spacingScaleFactor": 1.0906
+      },
+      "palette": {
+        "background": "#F4F0EA",
+        "surface": "#E0D6CA",
+        "text": "#2B2621",
+        "accent": "#9D7565",
+        "onAccent": "#FFFFFF"
+      },
+      "motionLanguage": "deliberate, slow",
+      "motif": "Cerc de pizza, scânteie și linie editorială",
+      "narrative": "full-site",
+      "dominantInteraction": "editorial-gallery",
+      "heroToPage": "carry the recipe motif into authored sections",
+      "implementation": {
+        "applied": [
+          "spacing.scalePx",
+          "typography.headingScaleFactor",
+          "typography.headingFamily",
+          "typography.bodyFamily",
+          "typography.bodyLineHeight",
+          "grid.maxWidthPx",
+          "grid.gutter",
+          "geometry.radiusPx",
+          "motion.intensity",
+          "color"
+        ],
+        "editorial": [
+          "accentHueShiftDegrees",
+          "compositionFamily",
+          "material",
+          "rhythm",
+          "image treatment",
+          "accent placement",
+          "motif geometry",
+          "narrative",
+          "interaction semantics"
+        ],
+        "note": "Applied values live in the existing manifest designTokens; CSS export reads that field."
+      },
+      "adaptation": "Replace subject, geometry, imagery, copy and material cues with brand-specific originals.",
+      "similarHistory": []
+    },
+    "sectionCompositions": {
+      "hero": {
+        "compositionId": "composition.asymmetric-editorial.v1",
+        "suggestedCompositionId": null,
+        "params": {
+          "mediaShare": 0.472,
+          "mediaSide": "start"
+        },
+        "status": "selected",
+        "requestedId": null,
+        "reason": "Compatible with role, component, style and available media.",
+        "version": null
+      },
+      "offer": {
+        "compositionId": "composition.modular-grid.v1",
+        "suggestedCompositionId": null,
+        "params": {
+          "columns": 3.272
+        },
+        "status": "selected",
+        "requestedId": null,
+        "reason": "Compatible with role, component, style and available media.",
+        "version": null
+      },
+      "story": {
+        "compositionId": "composition.asymmetric-editorial.v1",
+        "suggestedCompositionId": null,
+        "params": {
+          "mediaShare": 0.497,
+          "mediaSide": "end"
+        },
+        "status": "selected",
+        "requestedId": null,
+        "reason": "Compatible with role, component, style and available media.",
+        "version": null
+      },
+      "conversion": {
+        "compositionId": "composition.conversion.v1",
+        "suggestedCompositionId": null,
+        "params": {
+          "maxMeasureCh": 45.805
+        },
+        "status": "selected",
+        "requestedId": null,
+        "reason": "Compatible with role, component, style and available media.",
+        "version": null
+      },
+      "footer": {
+        "compositionId": null,
+        "suggestedCompositionId": null,
+        "params": {},
+        "status": "no-compatible-composition",
+        "requestedId": null,
+        "reason": "Use semantic component flow without a composition preset.",
+        "version": null
+      }
+    },
+    "constraints": {
+      "responsiveBasePx": 320,
+      "touchTargetPx": 44,
+      "reducedMotion": true,
+      "maxContinuousDecorativePerViewport": 1,
+      "maxActiveWebGLScenes": 0
+    },
+    "historyCount": 28,
+    "historyFingerprint": "60be12ad2253d90bc06ac0429f600daf12bf0dc25eec17403283ed872a5b2327"
+  },
+  "siteKind": "restaurant-menu-preview",
+  "siteArc": {
+    "version": "1.0.0",
+    "source": "knowledge/hero-recipes.json",
+    "recipeId": "hero.recipe.quiet-editorial-field.v1",
+    "sourceCoverage": "full-site",
+    "sourceSections": [
+      "hero nocturn",
+      "catalog complet",
+      "pauză de brand",
+      "comandă în pregătire",
+      "footer"
+    ],
+    "motif": "Cercul pizza, scânteia și roșul focului leagă toate secțiunile.",
+    "transitionGuidance": "Un hero întunecat trece prin banda roșie în catalogul deschis; o secțiune întunecată reafirmă programul non stop înainte de informațiile despre comandă.",
+    "endingGuidance": "Logo-ul original închide pagina lângă starea reală a comenzilor.",
+    "chapters": [
+      {
+        "page": "/",
+        "sectionId": "hero",
+        "role": "hero"
+      },
+      {
+        "page": "/",
+        "sectionId": "menu",
+        "role": "catalog"
+      },
+      {
+        "page": "/",
+        "sectionId": "night",
+        "role": "brand-pause"
+      },
+      {
+        "page": "/",
+        "sectionId": "ordering",
+        "role": "ordering-status"
+      },
+      {
+        "page": "/",
+        "sectionId": "footer",
+        "role": "footer"
+      }
+    ],
+    "status": "draft"
+  },
+  "libraryVersions": {
+    "styles": "1.1.0",
+    "effects": "1.1.0",
+    "components": "1.2.0",
+    "rules": "1.1.0"
+  },
+  "inputs": {
+    "name": "MXM Food / Miky's Pizza",
+    "type": "fast food restaurant",
+    "locale": "ro-RO",
+    "audience": "București, clienți care comandă la orice oră",
+    "goal": "prezentare memorabilă și meniu complet, comandă online după confirmarea canalului",
+    "content": "pizza 32 cm, shaorma, kebab, meniuri pui, schnitzel, paste, salate, deserturi, băuturi",
+    "brand": "MXM PIZZA",
+    "style": "dark, high contrast, energetic, editorial",
+    "hero": "memorable nocturnal flame and pizza focal composition",
+    "pages": [
+      {
+        "path": "/",
+        "purpose": "home menu and ordering"
+      }
+    ]
+  },
+  "artDirectionRationale": "Logo-ul original MXM Food / Miky’s Pizza dictează negru, foc roșu-portocaliu și accente italiene. Rețeta Rail editorială devine o compoziție originală de noapte: declarație tipografică, pizza ilustrată în CSS, catalog pe fundal cald și capitol întunecat de pauză.",
+  "technologyDecision": {
+    "source": "technology.selection.v1",
+    "status": "decided",
+    "strategy": "new",
+    "stack": "HTML, CSS și JavaScript fără framework; catalog JSON; ilustrație hero în CSS.",
+    "rationale": "Un catalog de 55 de produse și un coș/cont demonstrativ nu cer backend înainte de conectarea platformei separate de comenzi. Fișierele statice sunt ușor de întreținut și de migrat.",
+    "deployment": "Preview static; hostingul și domeniul vor fi stabilite ulterior.",
+    "maintenance": "Produsele și, ulterior, prețurile/disponibilitatea se actualizează în menu.json. Integrarea platformei separate va înlocui interfețele demonstrative."
+  },
+  "style": {
+    "id": "style.architectural-editorial.v1",
+    "secondaryInfluences": [],
+    "overrides": {}
+  },
+  "designTokens": {
+    "color": {
+      "background": "#10100f",
+      "surface": "#1a1a17",
+      "text": "#f3f0e7",
+      "accent": "#ef432e",
+      "onAccent": "#ffffff",
+      "darkSurface": "#10100f",
+      "accentLight": "#ffc970"
+    },
+    "typography": {
+      "baseSizePx": 17,
+      "mobileBaseSizePx": 16,
+      "minimumFunctionalTextPx": 16,
+      "minimumSupportingTextPx": 14,
+      "bodyLineHeight": 1.65,
+      "maximumMeasureCh": 70,
+      "allowSub14PxDecorativeOnly": true,
+      "headingFamily": "Barlow Condensed",
+      "bodyFamily": "DM Sans",
+      "headingScale": "dramatic",
+      "headingScaleFactor": 1.0462
+    },
+    "geometry": {
+      "radiusPx": 16,
+      "borderStyle": "subtle"
+    },
+    "spacing": {
+      "density": "spacious",
+      "sectionRhythm": "varied",
+      "scalePx": [
+        4.362,
+        8.725,
+        17.45,
+        26.174,
+        43.624,
+        69.798
+      ]
+    },
+    "grid": {
+      "mobileColumns": 4,
+      "tabletColumns": 8,
+      "desktopColumns": 12,
+      "maxWidthPx": 1280,
+      "gutter": "clamp(16px, 3vw, 40px)"
+    },
+    "motion": {
+      "character": "deliberate, slow",
+      "intensity": 0.3
+    }
+  },
+  "interactionDesign": {
+    "source": "ux.motion-design.v1",
+    "selectedPrinciples": [
+      3,
+      6,
+      8,
+      10,
+      13,
+      14,
+      15,
+      18,
+      19
+    ],
+    "rationale": "Filtrarea, căutarea și coșul demo răspund imediat; navigarea rămâne tactilă și accesibilă; secțiunea finală clarifică statusul comenzilor.",
+    "tokens": {
+      "feedbackMs": 150,
+      "commonTransitionMs": 240,
+      "largeTransitionMs": 400,
+      "staggerMs": 50,
+      "amplitudePx": 8,
+      "easeEnter": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "easeMove": "cubic-bezier(0.65, 0, 0.35, 1)",
+      "easeExit": "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    "behaviors": {
+      "desktop": "Filtre și căutare directă; carduri cu feedback discret.",
+      "touch": "Butoane de minimum 44 px și filtre derulabile.",
+      "keyboard": "Dialoguri native, focus vizibil și link de salt.",
+      "reducedMotion": "Scroll instant și fără transformări decorative."
+    }
+  },
+  "performanceEngineering": {
+    "source": "performance.engineering.v1",
+    "selectedOptimizations": [
+      2,
+      3,
+      13
+    ],
+    "rationale": "Nu există framework sau video; imaginea logo-ului din footer este încărcată lazy, hero-ul este CSS.",
+    "strategies": {
+      "criticalMedia": "Hero CSS, fără imagine externă critică.",
+      "javascript": "Un singur fișier pentru catalog și demo; fără dependențe runtime.",
+      "loading": "Logo din footer lazy; fără autoplay.",
+      "data": "JSON local; backend neaplicabil până la integrarea comenzilor."
+    },
+    "verification": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "seoAndSocial": {
+    "source": "seo.social.v1",
+    "publicationMode": "preview",
+    "pageMetadata": [
+      {
+        "path": "/",
+        "title": "MXM PIZZA — poftă la orice oră",
+        "description": "Catalogul MXM PIZZA; comenzile online sunt în pregătire."
+      }
+    ],
+    "crawlPlan": "noindex până la confirmarea domeniului, adreselor, prețurilor și comenzilor; fără canonical inventat.",
+    "structuredDataPlan": "Fără JSON-LD cu date comerciale neconfirmate.",
+    "socialImage": {
+      "status": "pending-domain",
+      "source": "assets/share.svg",
+      "note": "Imagine creată local; og:image absolut se adaugă la publicare."
+    },
+    "verification": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "globalEffects": [],
+  "immersiveExperience": {
+    "version": "1.0.0",
+    "source": "knowledge/immersive-techniques.json",
+    "decision": "not-selected",
+    "rationale": "The brief has no clear spatial or generative storytelling need. Keep the content and actions direct.",
+    "techniqueId": null,
+    "renderer": null,
+    "placements": []
+  },
+  "pages": [
+    {
+      "path": "/",
+      "sections": [
+        {
+          "id": "hero",
+          "narrativeRole": "hero",
+          "componentId": "component.hero.editorial-split.v1",
+          "variantId": "media-start",
+          "compositionId": "composition.asymmetric-editorial.v1",
+          "compositionParams": {
+            "mediaShare": 0.472,
+            "mediaSide": "start"
+          },
+          "compositionStatus": "selected",
+          "requestedCompositionId": null,
+          "suggestedCompositionId": null,
+          "componentParams": {},
+          "contentSlots": [
+            {
+              "name": "hero.eyebrow",
+              "status": "authored",
+              "value": "MXM PIZZA · NON STOP"
+            },
+            {
+              "name": "hero.title",
+              "status": "authored",
+              "value": "NOAPTEA ARE GUST."
+            },
+            {
+              "name": "hero.body",
+              "status": "authored",
+              "value": "Pizza, shaorma și tot ce îți place, într-un meniu făcut pentru orice oră."
+            },
+            {
+              "name": "hero.media",
+              "status": "authored",
+              "value": "Ilustrație originală pizza în CSS"
+            },
+            {
+              "name": "button.primary",
+              "status": "authored",
+              "value": "Explorează meniul"
+            }
+          ],
+          "responsive": {
+            "mobile": "semantic single-column flow",
+            "desktop": "adapt component to content and brand signature"
+          },
+          "nextSectionId": "menu",
+          "effectBindings": [
+            {
+              "target": "hero.media",
+              "effectId": "effect.none.v1",
+              "params": {},
+              "selectionSource": "rail"
+            }
+          ],
+          "heroDirection": {
+            "version": "1.0.0",
+            "source": "knowledge/hero-directions.json",
+            "directionId": "hero.architectural-editorial.v1",
+            "styleId": "style.architectural-editorial.v1",
+            "seed": 1,
+            "recipe": {
+              "id": "hero.recipe.quiet-editorial-field.v1",
+              "version": "1.0.0",
+              "source": "knowledge/hero-recipes.json",
+              "status": "candidate",
+              "reason": "Compatible with style.architectural-editorial.v1; No direct industry match; No matching history penalty; Candidate requires brand adaptation"
+            },
+            "experience": {
+              "version": "1.0.0",
+              "status": "draft",
+              "ambition": "brand-experience",
+              "family": "editorial-gallery",
+              "brandPurpose": "prezentare memorabilă și meniu complet, comandă online după confirmarea canalului",
+              "trigger": {
+                "kind": "scroll",
+                "label": "Explorează meniul"
+              },
+              "stages": [
+                {
+                  "phase": "initial",
+                  "description": "Headline și pizza apar imediat."
+                },
+                {
+                  "phase": "trigger",
+                  "description": "CTA navighează la meniu cu scroll nativ."
+                },
+                {
+                  "phase": "transformation",
+                  "description": "Banda roșie introduce catalogul cald."
+                },
+                {
+                  "phase": "result",
+                  "description": "Toate cele 55 de produse pot fi filtrate și căutate."
+                },
+                {
+                  "phase": "exploration",
+                  "description": "Coșul demo și secțiunea de comandă explică starea platformei."
+                }
+              ],
+              "continuity": "Scânteia și roșul focului persistă până la footer.",
+              "mobile": "Textul precede ilustrația; catalogul are o singură coloană.",
+              "reducedMotion": "Fără scroll animat și transformări la hover.",
+              "implementation": {
+                "status": "implemented",
+                "source": "index.html, styles.css, app.js",
+                "note": "Ilustrație CSS și scroll nativ; fără animație continuă."
+              },
+              "controls": [
+                "link CTA navigabil cu tastatura"
+              ],
+              "timing": {
+                "entryMaxMs": 900,
+                "interactionDurationMs": 1600,
+                "note": "User-triggered transformations have their own duration; do not stretch mandatory entrance or delay access to the offer."
+              }
+            },
+            "historySources": [],
+            "status": "draft",
+            "variant": 1,
+            "fingerprint": "1ea3ec41f6a0401b80a301006d6249773226281d441a0dbf893b792dd501d64b",
+            "brandAnchor": {
+              "brand": "MXM PIZZA",
+              "offer": "55 de produse în șase grupe de meniu și băuturi",
+              "audience": "clienți din București",
+              "goal": "meniu complet și pregătire pentru comenzi online"
+            },
+            "concept": "Noaptea are gust",
+            "brandConnection": "Focul și emblema italiană din logo devin o pizza circulară, scântei și contrast nocturn.",
+            "composition": {
+              "focalPoint": "pizza originală CSS",
+              "desktop": "Headline mare în stânga, pizza circulară și orbită în dreapta.",
+              "mobile": "Headline, explicație și CTA înainte de ilustrație.",
+              "textSafety": "Textul și CTA rămân în flux, pe fundal întunecat opac."
+            },
+            "asset": {
+              "status": "implemented",
+              "subject": "pizza stilizată originală",
+              "productionBrief": "Ilustrație CSS din ingrediente grafice; logo original furnizat de client în footer.",
+              "mobileCrop": "Cercul complet rămâne vizibil.",
+              "rights": "Logo furnizat de client; ilustrație originală.",
+              "source": "styles.css"
+            },
+            "choreography": [
+              {
+                "bindingIndex": 0,
+                "purpose": "Slow bounded displacement emphasizes perspective while the geometry and reading plane remain stable.",
+                "desktop": "Track mouse movement across the viewport while the hero is visible, coalesce with requestAnimationFrame and cap displacement at the binding limit; do not move text or CTA.",
+                "touch": "Use bounded scroll-linked image displacement while visible; keep native scrolling and disable displacement for reduced motion.",
+                "lifecycle": "Run entry only when visible; stop continuous work offscreen or when the tab is hidden; remove listeners on teardown; respond immediately to preference changes."
+              }
+            ],
+            "fallbacks": {
+              "reducedMotion": "Complete static final composition; disable parallax, scramble, continuous loops and decorative reveals. No content is hidden.",
+              "noJS": "Semantic heading, offer, media and CTA visible and usable before enhancement.",
+              "lowPower": "Prefer the still or vector specimen; no mandatory video, WebGL or background decode.",
+              "missingAsset": "Retain an intentional typographic composition and the offer; replace failed media without layout shift."
+            },
+            "constraints": {
+              "maxActiveContinuousLayers": 1,
+              "maximumEntryDurationMs": 900,
+              "allowScrollHijacking": false,
+              "allowMovingControls": false,
+              "requirePauseForLongAutoplay": true
+            },
+            "antiPatterns": [
+              "Distorted buildings, fake project credits, cropped structural focal points and scroll-jacked camera tours.",
+              "A button hover or generic fade-up alone does not establish a memorable concept.",
+              "Do not repeat a recent project’s focal subject, layout and choreography as a bundle."
+            ],
+            "implementationGuide": "docs/HERO_DIRECTION_GUIDE.md",
+            "review": {
+              "status": "pending",
+              "reviewer": "",
+              "evidence": [],
+              "scores": {},
+              "hardGates": {},
+              "note": "Generated design hypothesis, not an implemented or visually reviewed hero. Scores require explicit human/agent visual inspection and reasons."
+            }
+          }
+        },
+        {
+          "id": "menu",
+          "narrativeRole": "catalog",
+          "componentId": "component.section.features-grid.v1",
+          "variantId": "balanced",
+          "compositionId": "composition.modular-grid.v1",
+          "compositionParams": {
+            "columns": 3.272
+          },
+          "compositionStatus": "selected",
+          "requestedCompositionId": null,
+          "suggestedCompositionId": null,
+          "componentParams": {},
+          "contentSlots": [
+            {
+              "name": "section.title",
+              "status": "authored",
+              "value": "Tot meniul. Fără pauză."
+            },
+            {
+              "name": "section.body",
+              "status": "authored",
+              "value": "55 de produse din documentele clientului, cu căutare și filtre."
+            },
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "Tot meniul. Fără pauză."
+            },
+            {
+              "name": "features.items",
+              "status": "authored",
+              "value": "55 de produse din menu.json"
+            }
+          ],
+          "responsive": {
+            "mobile": "semantic single-column flow",
+            "desktop": "adapt component to content and brand signature"
+          },
+          "nextSectionId": "night",
+          "effectBindings": []
+        },
+        {
+          "id": "night",
+          "narrativeRole": "brand-pause",
+          "componentId": "component.section.story.v1",
+          "variantId": "story",
+          "compositionId": "composition.asymmetric-editorial.v1",
+          "compositionParams": {
+            "mediaShare": 0.497,
+            "mediaSide": "end"
+          },
+          "compositionStatus": "selected",
+          "requestedCompositionId": null,
+          "suggestedCompositionId": null,
+          "componentParams": {},
+          "contentSlots": [
+            {
+              "name": "section.title",
+              "status": "authored",
+              "value": "Pofta nu se uită la ceas."
+            },
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "Pofta nu se uită la ceas."
+            }
+          ],
+          "responsive": {
+            "mobile": "semantic single-column flow",
+            "desktop": "adapt component to content and brand signature"
+          },
+          "nextSectionId": "ordering",
+          "effectBindings": []
+        },
+        {
+          "id": "ordering",
+          "narrativeRole": "ordering-status",
+          "componentId": "component.section.story.v1",
+          "variantId": "conversion",
+          "compositionId": "composition.conversion.v1",
+          "compositionParams": {
+            "maxMeasureCh": 45.805
+          },
+          "compositionStatus": "selected",
+          "requestedCompositionId": null,
+          "suggestedCompositionId": null,
+          "componentParams": {},
+          "contentSlots": [
+            {
+              "name": "section.title",
+              "status": "authored",
+              "value": "Un click mai aproape de poftă."
+            },
+            {
+              "name": "section.body",
+              "status": "authored",
+              "value": "Coș și cont demonstrative; platformă separată în pregătire."
+            },
+            {
+              "name": "section.heading",
+              "status": "authored",
+              "value": "Un click mai aproape de poftă."
+            }
+          ],
+          "responsive": {
+            "mobile": "semantic single-column flow",
+            "desktop": "adapt component to content and brand signature"
+          },
+          "nextSectionId": "footer",
+          "effectBindings": []
+        },
+        {
+          "id": "footer",
+          "narrativeRole": "footer",
+          "componentId": "component.footer.standard.v1",
+          "variantId": "columns",
+          "compositionId": null,
+          "compositionParams": {},
+          "compositionStatus": "no-compatible-composition",
+          "requestedCompositionId": null,
+          "suggestedCompositionId": null,
+          "componentParams": {},
+          "contentSlots": [
+            {
+              "name": "footer.brand",
+              "status": "authored",
+              "value": "Logo original MXM Food Miky’s Pizza"
+            },
+            {
+              "name": "footer.contact",
+              "status": "authored",
+              "value": "Adresă și telefon în curs de confirmare."
+            }
+          ],
+          "responsive": {
+            "mobile": "semantic single-column flow",
+            "desktop": "adapt component to content and brand signature"
+          },
+          "nextSectionId": null,
+          "effectBindings": []
+        }
+      ],
+      "title": "MXM PIZZA — poftă la orice oră",
+      "metaDescription": "Catalogul MXM PIZZA: pizza, shaorma, meniuri, paste, salate, deserturi și băuturi. Comenzile online sunt în pregătire."
+    }
+  ],
+  "responsive": {
+    "baseWidthPx": 320,
+    "contentDrivenBreakpoints": true,
+    "touchTargetPx": 44
+  },
+  "budgets": {
+    "maxActiveWebGLScenes": 0,
+    "maxContinuousDecorativePerViewport": 1,
+    "targetMobileJSKB": 180,
+    "targetLighthousePerformance": 90,
+    "autoplayVideoPolicy": "Start on user request by default. Document a brand-critical exception with muted playback, an accessible pause control, a reduced-motion poster and measured network and runtime cost."
+  },
+  "accessibility": {
+    "respectReducedMotion": true,
+    "minimumContrast": "WCAG-AA",
+    "keyboardSupportRequired": true,
+    "minimumFunctionalTextPx": 16,
+    "minimumSupportingTextPx": 14,
+    "textZoomPercent": 200
+  }
+}
