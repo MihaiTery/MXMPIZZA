@@ -374,13 +374,13 @@
     },
     "behaviors": {
       "desktop": "Pizza se înclină și se deplasează la pointer; se recentrează la pointerleave. Filtre și căutare directă.",
-      "touch": "Butonul coșului și widgetul WhatsApp rămân vizibile, cu spațiu între ele și poziționare compatibilă cu safe area. Filtrele sunt derulabile.",
+      "touch": "Cele trei controale fixe din dreapta jos sunt separate: apel alb, coș roșu și WhatsApp verde, cu safe area pe mobil.",
       "keyboard": "Dialoguri native, focus vizibil și link de salt.",
       "reducedMotion": "Logo și pizza statice; fără tilt, levitație sau scroll animat.",
       "whatsapp": "Widget demonstrativ accesibil pe mobil și desktop; deschide dialog, permite redactare locală și sugestii de mesaj; trimiterea rămâne dezactivată până la adăugarea numărului.",
       "cart": "Coșul este control fix la 98 px de baza ecranului pe desktop și 80 px pe mobil; valorile CSS au fallback explicit înainte de safe-area env(). URL-ul CSS este versionat pentru cache.",
       "categories": "Butoane încadrate cu stare activă contrastantă; săgeți de derulare orizontală, dezactivate la capete; navigare prin tastatură și atingere.",
-      "call": "Buton Sună în header și footer deschide un dialog demonstrativ cu 07xx xxx xxx; nu există link tel: și nu se inițiază apel."
+      "call": "Butonul alb de apel este fix în dreapta jos, deasupra coșului și a widgetului WhatsApp, pe mobil și desktop. Deschide doar dialogul demonstrativ cu 07xx xxx xxx; nu există link tel: și nu se inițiază apel."
     }
   },
   "performanceEngineering": {

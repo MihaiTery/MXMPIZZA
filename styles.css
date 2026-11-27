@@ -109,3 +109,12 @@
 @media(max-width:1000px){.menu-toolbar{display:flex;flex-direction:column;align-items:stretch}.search{width:100%}.search input{width:100%}}
 @media(max-width:700px){.category-rail{width:100%;gap:5px}.category-arrow{width:42px;min-height:48px}.filters button{min-height:48px;padding:11px 13px}.site-header .header-actions{gap:5px}.site-header .icon-button{padding:0 9px;font-size:10px}.site-header .brand{width:120px;min-width:106px}.search input{min-height:48px}}
 @media(prefers-reduced-motion:reduce){.filters button{transition:none}}
+
+/* White call control joins the persistent cart and WhatsApp controls. */
+.floating-call{position:fixed;right:24px;bottom:172px;bottom:calc(172px + env(safe-area-inset-bottom, 0px));z-index:19;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:126px;min-height:58px;padding:0 17px;border:1px solid #eee9df;border-radius:999px;background:#fff;color:#171715;box-shadow:0 12px 30px #0007;font-weight:800;text-transform:uppercase;letter-spacing:.02em;transition:transform .18s ease,background .18s ease}
+.floating-call:hover{transform:translateY(-3px);background:#fff0dc}
+.call-symbol{font-size:24px;line-height:1;color:#d74327}
+.call-label{display:flex;flex-direction:column;align-items:flex-start;line-height:1.05;font-size:12px}
+.call-label small{font-size:9px;letter-spacing:.16em;color:#8c8175;margin-top:4px}
+@media(max-width:700px){.floating-call{right:14px;bottom:146px;bottom:calc(146px + env(safe-area-inset-bottom, 0px));min-width:55px;width:55px;height:55px;min-height:55px;padding:0}.call-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.call-symbol{font-size:26px}}
+@media(prefers-reduced-motion:reduce){.floating-call{transition:none}.floating-call:hover{transform:none}}
